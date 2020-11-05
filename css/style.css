@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200&family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Tajawal&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+* {
+  margin: 0;
+}
+
+:root{
+  --font-primary:Commissioner;
+}
+h2{
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: 800;
+  color: orange;
+
+}
+p,h3{
+  font-family: var(--font-primary);
+  font-size: 17px;
+}
+
+.container-servicos {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  margin-left: 5%;
+}
+
+.title-header {
+  font-size: 23px;
+  color: lightgray;
+  font-family: var(--font-primary);
+  font-variant: inherit;
+  font-weight: 200;
+  margin: 0px;
+}
+
+.card-servico {
+  box-shadow: 1px 1px 15px #bebebe;
+  margin-left: -10%;
+  margin-top: 10%;
+  padding: 10px;
+  width: 360px;
+  margin: 15px;
+  background-color: white;
+  border-radius: 11px;
+  text-align: center;
+  transition: all 0.3s;
+
+
+}
+.card-servico:hover{
+  transition: all 0.5s;
+  bottom: 0%;
+  margin-top: -1%;
+}
+
+img {
+  justify-content: center;
+  display: flex;
+  border-radius: 7px;
+  margin-top: 1rem;
+  margin: 0.5rem;
+}
+
+p {
+  text-align: center;
+  padding: 15px;
+}
+
+button {
+  width: 20rem;
+  padding: 10px;
+  border-radius: 25px;
+  border: #d794fd 1px solid;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-size: 19px;
+  font-weight: 600;
+  color: #d43ff1;
+  background: #fff;
+}
+
+button:hover {
+  background: #ba04df linear-gradient(to right, #6303bd, #c804e2);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.container-projetos {
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  padding: 10rem;
+  background-image: url("/imagens/3176007.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.container-projetos .title-header h1 {
+  text-align: center;
+  justify-content: center;
+}
+
+.carrossel {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.carrossel i {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-projetos {
+  background-image: url("/imagens/gradiente.jpg");
+  background-repeat: no-repeat;
+  background-size: 600px;
+  height: 400px;
+  width: 400px;
+  margin: 10px;
+  border-radius: 10px;
+;
+}
+
+.card-projetos:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.card-info {
+  visibility: hidden;
+  margin-top: 50%;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.card-projetos:hover .card-info {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 45%;
+  transition: all 0.5s;
+  text-align: center;
+  
+}
+.card-info h3, p{
+ text-align: center;
+ margin: 6px;
+}
+
+/*# sourceMappingURL=style.css.map */
