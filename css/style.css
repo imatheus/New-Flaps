@@ -2,23 +2,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Tajawal&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 * {
-  margin: 0;
-}
+  margin: 0; }
 
-:root{
-  --font-primary:Commissioner;
-}
-h2{
-  font-family: var(--font-primary);
+h2 {
   font-size: 20px;
   font-weight: 800;
-  color: orange;
+  color: orange; }
 
-}
-p,h3{
-  font-family: var(--font-primary);
-  font-size: 17px;
-}
+p, h3 {
+  font-family: Commissioner;
+  font-size: 17px; }
+
+#logo {
+  position: absolute;
+  margin: 20px; }
+
+.header {
+  width: 100%; }
+  .header h1 {
+    bottom: 0%;
+    color: #fff;
+    font-variant: small-caps; }
+
+.full-banner {
+  width: 100%;
+  height: 90%;
+  background: #340283; }
+  .full-banner img {
+    opacity: 7%;
+    width: 100%;
+    height: 100%; }
+
+.banner-info {
+  position: absolute;
+  top: 30%;
+  left: 15%; }
+  .banner-info h1 {
+    font-size: 5rem;
+    font-family: Commissioner;
+    font-weight: 600;
+    padding: 2px; }
+  .banner-info button {
+    width: 10rem;
+    padding: 12px;
+    border-radius: 25px;
+    border: #ffbe0a 1px solid;
+    cursor: pointer;
+    font-family: Commissioner;
+    font-size: 19px;
+    font-weight: 700;
+    color: #ffffff;
+    background: none; }
+  .banner-info button:hover {
+    background: #ffbe0a linear-gradient(to right, #ffb10a, #ffbe0a);
+    color: #fff;
+    transition: 0.5s;
+    border: none;
+    box-shadow: 0 0.1rem 1rem #74028bc2; }
 
 .container-servicos {
   display: flex;
@@ -26,69 +66,59 @@ p,h3{
   align-items: center;
   flex-wrap: wrap;
   margin-top: 10rem;
-  margin-left: 5%;
-}
+  margin-left: 5%; }
 
 .title-header {
   font-size: 23px;
   color: lightgray;
-  font-family: var(--font-primary);
+  font-family: Commissioner;
   font-variant: inherit;
   font-weight: 200;
-  margin: 0px;
-}
+  padding: 20px; }
 
 .card-servico {
-  box-shadow: 1px 1px 15px #bebebe;
+  box-shadow: 0 0.4rem 1rem #d6d6d6;
   margin-left: -10%;
   margin-top: 10%;
   padding: 10px;
   width: 360px;
+  height: 410px;
   margin: 15px;
   background-color: white;
   border-radius: 11px;
   text-align: center;
-  transition: all 0.3s;
+  transition: all 0.3s; }
+  .card-servico img {
+    justify-content: center;
+    display: flex;
+    border-radius: 7px;
+    margin-top: 1rem;
+    margin: 0.5rem; }
+  .card-servico p {
+    text-align: center;
+    padding: 15px; }
+  .card-servico button {
+    width: 20rem;
+    padding: 10px;
+    border-radius: 25px;
+    border: #d794fd 1px solid;
+    cursor: pointer;
+    font-family: Commissioner;
+    font-size: 19px;
+    font-weight: 600;
+    color: #9d0aff;
+    background: #fff; }
+  .card-servico button:hover {
+    background: #ba04df linear-gradient(to right, #6303bd, #c804e2);
+    color: #fff;
+    transition: 0.5s;
+    border: none;
+    box-shadow: 0 0.1rem 1rem #74028bc2; }
 
-
-}
-.card-servico:hover{
+.card-servico:hover {
   transition: all 0.5s;
   bottom: 0%;
-  margin-top: -1%;
-}
-
-img {
-  justify-content: center;
-  display: flex;
-  border-radius: 7px;
-  margin-top: 1rem;
-  margin: 0.5rem;
-}
-
-p {
-  text-align: center;
-  padding: 15px;
-}
-
-button {
-  width: 20rem;
-  padding: 10px;
-  border-radius: 25px;
-  border: #d794fd 1px solid;
-  cursor: pointer;
-  font-family: var(--font-primary);
-  font-size: 19px;
-  font-weight: 600;
-  color: #d43ff1;
-  background: #fff;
-}
-
-button:hover {
-  background: #ba04df linear-gradient(to right, #6303bd, #c804e2);
-  color: #fff;
-  transition: 0.5s;
-}
+  margin-top: -1%; }
 
 .container-projetos {
   margin-top: 10%;
@@ -98,28 +128,24 @@ button:hover {
   padding: 10rem;
   background-image: url("/imagens/3176007.jpg");
   background-size: 100%;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 .container-projetos .title-header h1 {
   text-align: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .carrossel {
   margin-top: 2%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-}
+  width: 100%; }
 
 .carrossel i {
   justify-content: center;
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .card-projetos {
   background-image: url("/imagens/gradiente.jpg");
@@ -128,14 +154,11 @@ button:hover {
   height: 400px;
   width: 400px;
   margin: 10px;
-  border-radius: 10px;
-;
-}
+  border-radius: 10px; }
 
 .card-projetos:hover {
   opacity: 0.9;
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 .card-info {
   visibility: hidden;
@@ -146,20 +169,17 @@ button:hover {
   bottom: 0;
   opacity: 0;
   transition: all 0.3s;
-  text-align: center;
-}
+  text-align: center; }
 
 .card-projetos:hover .card-info {
   visibility: visible;
   opacity: 1;
   margin-top: 45%;
   transition: all 0.5s;
+  text-align: center; }
+
+.card-info h3, p {
   text-align: center;
-  
-}
-.card-info h3, p{
- text-align: center;
- margin: 6px;
-}
+  margin: 6px; }
 
 /*# sourceMappingURL=style.css.map */
