@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200&family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Tajawal&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+* {
+  margin: 0;
+}
+$gray:rgb(214, 214, 214);
+$purple:#74028bc2;
+$font:Commissioner;
+$font-h1: Rubik;
+$box-shadow: 0 0.4rem 1rem $gray !default;
+$box-shadow-purple: 0 0.1rem 1rem $purple !default;
+
+@keyframes pulando{
+to{
+  transform: translateY(30px);
+}
+}
+@mixin botao-primario {
+     button {
+        width: 20rem;
+        padding: 10px;
+        border-radius: 25px;
+        border: #d794fd 1px solid;
+        cursor: pointer;
+        font-family:$font;
+        font-size: 19px;
+        font-weight: 600;
+        color: #9d0aff;
+        background: #fff;
+      }
+      button:hover{
+            background: #ba04df linear-gradient(to right, #6303bd, #c804e2);
+            color: #fff;
+            transition: 0.5s;
+            border:none;
+            box-shadow: $box-shadow-purple;
+
+      }
+}
+
+@mixin botao-secundario {
+  button {
+    width: 10rem;
+    padding: 12px;
+    border-radius: 25px;
+    border:#ffbe0a 1px solid;
+    cursor: pointer;
+    font-family:$font;
+    font-size: 19px;
+    font-weight: 700;
+    color: #ffffff;
+    background:none;
+  }
+  button:hover{
+        background:#ffbe0a linear-gradient(to right, #ffb10a, #ffbe0a);
+        color: #fff;
+        transition: 0.5s;
+        border:none;
+        box-shadow: $box-shadow-purple;
+
+  }
+
+}
+fieldset, #select-contato, textarea{
+  border: none;
+  padding: 10px;
+  width: 90%;
+}
+
+h2{
+  font-size: 25px;
+  font-weight: 800;
+  font-family: $font;
+  color: rgb(128, 128, 128);
+  text-align: center;
+  margin: 10px;
+}
+
+p,h3{
+  font-family: $font;
+  font-size: 17px;
+  margin: 5px;
+}
+#logo{
+  position: absolute;
+  margin: 20px;
+
+}
+
+#seta{
+  animation: pulando 1s ease-out alternate infinite;
+  margin-top: -15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header{
+  width: 100%;   
+
+}
+
+.banner-info{
+  position: absolute;
+   top: 30%;
+   left: 15%;
+ 
+ 
+   h1{
+     font-size: 6rem;
+     color: azure;
+     font-family: $font-h1;
+     font-weight: 300;
+     padding: 2px;
+ 
+   }
+ 
+   @include botao-secundario()
+  
+ }
+
+.contato{
+  margin-top:8%;
+  position: absolute;;
+  left: 60%;
+  flex-wrap: wrap;
+ 
+
+  @include botao-primario()
+}
+
+.card-contato{
+  background: rgb(255, 255, 255);
+  border:none;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+#area-input {
+  border:none;
+  border-radius: 15px;
+  
+}
+
+#area-input input {
+  height: 1.2rem;
+ 
+  padding: 15px;
+  background-color:#f3f3f3;
+  margin: 1px;
+  border-radius: 25px;
+  border: #e2e2e2 1px solid;
+  font-family: $font;
+font-size: 17px;}
+
+
+#select-contato {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-family: $font;
+  background: #7204a5 linear-gradient(to right, #6d03d1, #c804e2);
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  width: 102%;
+  cursor: pointer;
+  border-radius: 25px; }
+
+textarea {
+  background-color: #f3f3f3;
+  font-size: 1.2rem;
+  font-family: $font;
+  max-width: 400px;
+  max-height: 200px;
+  width: 100%;
+  border-radius: 15px;
+  padding: 12px; }
+
+.full-banner{
+width:100%;
+
+background: rgb(73, 2, 131);border: #ffb10a px  solid;
+flex-wrap: wrap;
+
+img{
+width:100%;
+height: 100%;
+
+}
+
+
+} 
+
+.container-servicos {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15rem;
+  margin-left: 5%;
+}
+
+.title-header {
+  font-size: 23px;
+  color: #8d8d8d;
+  font-family: $font;
+  font-variant: inherit;
+  font-weight: 200;
+  padding: 20px;
+}
+
+.card-servico {
+  box-shadow: $box-shadow;
+  margin-left: -10%;
+  margin-top: 10%;
+  padding: 10px;
+  width: 360px;
+  height: 410px;
+  margin: 15px;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s;
+
+  img{
+    justify-content: center;
+    display: flex;
+    border-radius: 7px;
+    margin-top: 1rem;
+    margin: 0.5rem;
+}
+
+p{
+    text-align: center;
+    padding: 15px;
+}
+@include botao-primario()
+}
+
+.card-servico:hover{
+  transition: all 0.5s;
+  bottom: 0%;
+  margin-top: -1%;
+  
+}
+
+
+
+.container-projetos {
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  padding: 10rem;
+  background-image: url("/imagens/3176007.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.container-projetos .title-header h1 {
+  text-align: center;
+  justify-content: center;
+  color: #f1f1f1;
+}
+
+.carrossel {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.carrossel i {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-projetos {
+  background-image: url("/imagens/gradiente.jpg");
+  background-repeat: no-repeat;
+  background-size: 600px;
+  height: 400px;
+  width: 400px;
+  margin: 10px;
+;
+}
+
+.card-projetos:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.card-info {
+  visibility: hidden;
+  margin-top: 50%;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.card-projetos:hover .card-info {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 45%;
+  transition: all 0.5s;
+  text-align: center;
+  
+}
+.card-info h3, p{
+ text-align: center;
+ margin: 6px;
+}
+
+/*# sourceMappingURL=style.css.map */

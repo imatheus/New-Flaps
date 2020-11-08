@@ -1,0 +1,2 @@
+node-sass --watch sass/style.scss css/style.css
+node-sass sass/style.scss css/style.css
