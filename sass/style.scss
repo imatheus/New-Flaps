@@ -72,24 +72,59 @@ to{
   }
 
 }
+
+@mixin botao-3 {
+
+  button {
+    width:150px;
+    margin-top:4%;
+    height: 35px;
+    border-radius: 20px 2px 20px 2px;
+    border:none;
+    background: #ac21fd42 linear-gradient(to right, #e730ff8a, #a812ffd2);
+    cursor: pointer;
+    font-family:$font;
+    font-size: 19px;
+    color: #fff;
+   
+  }
+  button:hover{
+        border:none;
+        color: #fff;
+        background: #b03af5d2;
+        box-shadow: rgba(143, 24, 212, 0.824)ow;
+
+  }
+
+}
 fieldset, #select-contato, textarea{
   border: none;
   padding: 10px;
   width: 90%;
+}
+h1{
+  font-size: 2.2rem;
 }
 
 h2{
   font-size: 25px;
   font-weight: 800;
   font-family: $font;
-  color: rgb(136, 136, 136);
+  color: rgb(255, 255, 255);
   text-align: center;
   margin: 10px;
 }
-
-p,h3{
-  font-family: $font;
-  font-size: 17px;
+h3{
+  font-family:$font;
+  color: #c4c4c4;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px;
+}
+p{
+  font-family:$font;
+  color: #464545;
+  font-size: 18px;
   margin: 5px;
 }
 #logo{
@@ -111,7 +146,7 @@ p,h3{
     font-family: $font;
     color:#fff;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 10px;
     transition: 0.3s;
   }
@@ -124,7 +159,7 @@ p,h3{
  #trabalhe-conosco{
     background:#c60aff linear-gradient(to right, #ce0aff, #ff7b00);
     border-radius: 20px 5px;
-    padding: 10px;
+    padding: 7px;
   }
 
   #trabalhe-conosco:hover{
@@ -172,13 +207,29 @@ flex-wrap: wrap;
 img{
 width:100%;
 
-}}; 
+}} 
 
 .container-servicos {
   flex-wrap: wrap;
   margin-top: 10%;
   margin-left: 5%;
+
+  @include botao-primario();   
+ 
 }
+#ver-mais{
+  font-family: arial;
+  font-size: 17px;
+  height: 30px;
+  color: #6303bd;
+  background:none;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  padding: 20px;
+align-items: center;
+}
+
 
 
 .container-servicos .title-header h1 {
@@ -218,9 +269,10 @@ width:100%;
 }
 
 p{
-    text-align: center;
     padding: 15px;
+    text-align: left;
 }
+
 @include botao-primario()
 }
 
@@ -232,50 +284,49 @@ p{
 }
 
 
-
-
 .container-about{
-  margin-top: 9%;
-  background-image: url("/imagens/qqq.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 100%;
-  height: 100%;
-  
-  .right-about{
-    width: 50%;
-    margin-top: -35%;
-    float: right;  
-    display: block;
-    text-align: center;
-    padding: 30px;
-    }
-    @include botao-primario()
-    
+  margin-top: 5%;
+ 
+ 
+h1{
+  text-align: center;
+  padding: 3%;
+  color: #888888;
+
+}
+@include botao-3()
+
 }
 
-.left-about{
-  width: 50%;
+.about{
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  background: rgb(238, 238, 238);
 
-  h1{
-    text-align: center;
-    font-family: $font;
-    font-size: 3rem;
-    font-weight: 700;
-    margin: 40px;
-  
+  img{
+
+    max-width: 100%;
   }
+  .left-about{
+       margin-left: 3%;
+       width: 550px;
+  }
+  
+  .left-about p, h1{
+    text-align: left;
+    
+  }
+ 
 }
-
-
-
-
-
-
 
 
 
 .container-projetos {
+  
+  text-align: center;
   justify-content: center;
   align-items: center;
   display: grid;
@@ -283,7 +334,7 @@ p{
   background-image: url("/imagens/4104300-01.svg");
   background-attachment: fixed;
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat:repeat;
 }
 
 .container-projetos .title-header h1 {
@@ -311,9 +362,8 @@ p{
   background-image: url("/imagens/gradiente.jpg");
   background-repeat: no-repeat;
   background-size: 600px;
-  height: 400px;
-  width: 400px;
-  margin: 10px;
+  width: 330px;
+  margin: 5px;
 ;
 }
 
@@ -348,24 +398,26 @@ p{
 }
 
 
-
+/*
 
 .contato{
   position: absolute;;
   float: left;
   height: 52rem;
-  background:purple;
+  background:rgb(98, 0, 128);
   width: 40%; 
-  padding: 40px;
+  padding: 70px;
 
   @include botao-primario()
 }
 
 .card-contato{
   margin-top:10%;
-  background: #e9e9e9;
+  background: #d6d6d6;
   border-radius: 15px;
   padding: 20px;
+  flex-wrap: wrap;
+  width: 60%; 
 }
 
 #area-input {
@@ -388,7 +440,7 @@ font-size: 17px;}
 
 
 #select-contato {
-  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 1.4rem;
   font-family: $font;
@@ -396,7 +448,7 @@ font-size: 17px;}
   color: white;
   padding: 10px;
   margin: 5px;
-  width: 102%;
+
   cursor: pointer;
   border-radius: 25px; }
 
@@ -404,17 +456,12 @@ textarea {
   background-color: #ffffff;
   font-size: 1.2rem;
   font-family: $font;
-  max-width: 500px;
+  max-width: 570px;
+  width: 100%;
   max-height: 200px;
-  border-radius: 15px;
-  padding: 12px; }
+  border-radius: 5px;
+  padding: 12px;}
 
-
-  .grid-right{
-    float: right;
-    height:57rem;
-    width: 55%;
-  }
 
 
 /*# sourceMappingURL=style.css.map */
