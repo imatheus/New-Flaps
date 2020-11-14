@@ -14,7 +14,7 @@ body{
 }
 
 $gray:rgb(214, 214, 214);
-$purple:#74028bc2;
+$purple:#6303bd;
 $font:Commissioner;
 $font-h1: Rubik;
 $box-shadow: 0 0.4rem 1rem $gray !default;
@@ -64,11 +64,9 @@ to{
   }
   button:hover{
         border:#ffbe0a 1px solid;
-        color: #fff;
+        color: orange;
         transition: 0.5s;
         background: transparent;
-        box-shadow: $box-shadow-purple;
-
   }
 
 }
@@ -110,13 +108,13 @@ h2{
   font-size: 25px;
   font-weight: 800;
   font-family: $font;
-  color: rgb(255, 255, 255);
+  color: rgb(97, 97, 97);
   text-align: center;
   margin: 10px;
 }
 h3{
   font-family:$font;
-  color: #c4c4c4;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 600;
   margin: 5px;
@@ -187,7 +185,7 @@ p{
    left: 7%;
  
    h1{
-     
+    
      font-size: 4rem;
      color: azure;
      font-family: $font-h1;
@@ -398,33 +396,46 @@ h1{
 }
 
 
-/*
 
-.contato{
-  position: absolute;;
+
+.container-contato{
+  position: relative;
   float: left;
-  height: 52rem;
-  background:rgb(98, 0, 128);
-  width: 40%; 
-  padding: 70px;
-
-  @include botao-primario()
-}
-
-.card-contato{
-  margin-top:10%;
-  background: #d6d6d6;
-  border-radius: 15px;
-  padding: 20px;
-  flex-wrap: wrap;
-  width: 60%; 
-}
-
-#area-input {
-  border:none;
-  border-radius: 15px;
+  height: 80vh;
+  background:$purple;
+  padding: 10px;
+  width: 48.5%;
+  @include botao-secundario()
   
 }
+
+
+.card-contato{
+  margin-left:13rem;
+  width: 55%;
+  margin-top:5%;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 20px;
+  flex-wrap: wrap;
+ 
+}
+
+
+.container-map{
+  @media only screen  and (max-width: 600px){
+    width: 100%;
+  }
+
+  float: right;
+  width: 50%;
+  height: 70vh;
+  
+
+ 
+
+}
+
 
 #area-input input {
   width: 100%;
@@ -440,28 +451,27 @@ font-size: 17px;}
 
 
 #select-contato {
-  flex-wrap: wrap;
-  align-items: center;
-  font-size: 1.4rem;
+  font-size: 20px;
   font-family: $font;
   background: #7204a5 linear-gradient(to right, #6d03d1, #c804e2);
   color: white;
-  padding: 10px;
-  margin: 5px;
-
+  padding: 5px;
+  margin: 1px;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 25px; }
+ }
 
 textarea {
+  font-size: 1.2rem;;
+  position: static;
   background-color: #ffffff;
-  font-size: 1.2rem;
   font-family: $font;
-  max-width: 570px;
-  width: 100%;
   max-height: 200px;
-  border-radius: 5px;
-  padding: 12px;}
-
+  max-width: 450px;
+  height: 100px;
+  width: 450px;
+  padding:10px;
+  border-radius: 5px;}
 
 
 /*# sourceMappingURL=style.css.map */
