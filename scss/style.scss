@@ -15,6 +15,7 @@ body{
 
 $gray:rgb(214, 214, 214);
 $purple:#6303bd;
+$orange:#ffbe0a;
 $font:Commissioner;
 $font-h1: Rubik;
 $box-shadow: 0 0.4rem 1rem $gray !default;
@@ -55,7 +56,7 @@ to{
     height: 45px;
     border-radius: 25px;
     border:none;
-    background:#ffbe0a linear-gradient(to right, #ffb10a, #ff7b00);
+    background:$orange linear-gradient(to right, $orange, #ff7b00);
     cursor: pointer;
     font-family:$font;
     font-size: 19px;
@@ -71,7 +72,7 @@ to{
 
 }
 
-@mixin botao-3 {
+@mixin botao-purple-primary {
 
   button {
     width:150px;
@@ -79,7 +80,7 @@ to{
     height: 35px;
     border-radius: 20px 2px 20px 2px;
     border:none;
-    background: #ac21fd42 linear-gradient(to right, #e730ff8a, #a812ffd2);
+    background: $purple linear-gradient(to right, #e730ff8a, #a812ffd2);
     cursor: pointer;
     font-family:$font;
     font-size: 19px;
@@ -91,18 +92,31 @@ to{
         color: #fff;
         background: #b03af5d2;
         box-shadow: rgba(143, 24, 212, 0.824)ow;
-
   }
 
 }
-fieldset, #select-contato, textarea{
-  border: none;
-  padding: 10px;
-  width: 90%;
+
+@mixin title-header {
+  .title-header {
+    font-size: 23px;
+    color: #8d8d8d;
+    font-family: $font;
+    font-variant: inherit;
+    font-weight: 200;
+  
+  }
 }
-h1{
-  font-size: 2.2rem;
+
+@mixin container-grid {
+  .grid {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
+
 
 h2{
   font-size: 25px;
@@ -125,6 +139,7 @@ p{
   font-size: 18px;
   margin: 5px;
 }
+
 #logo{
   position: absolute;
   margin: 10px;
@@ -183,14 +198,12 @@ p{
   position: absolute;
    top: 30%;
    left: 7%;
- 
+
    h1{
-    
      font-size: 4rem;
      color: azure;
      font-family: $font-h1;
      font-weight: 300;
- 
    }
  
    @include botao-secundario()
@@ -230,21 +243,14 @@ align-items: center;
 
 
 
-.container-servicos .title-header h1 {
+.container-servicos {
   text-align: center;
   justify-content: center;
-  color: #8d8d8d;
-}
-
-.title-header {
-  font-size: 23px;
-  color: #8d8d8d;
-  font-family: $font;
-  font-variant: inherit;
-  font-weight: 200;
+ 
+  @include title-header();
+  @include container-grid()
 
 }
-
 
 
 .card-servico {
@@ -276,23 +282,15 @@ p{
 
 .card-servico:hover{
   transition: all 0.5s;
-  bottom: 0%;
-  margin-top: -1%;
-  
+  bottom: 10%;
+  margin-top: -1%; 
 }
 
 
 .container-about{
-  margin-top: 5%;
- 
- 
-h1{
-  text-align: center;
-  padding: 3%;
-  color: #888888;
-
-}
-@include botao-3()
+margin-top: 5%;
+@include botao-purple-primary();
+@include title-header()
 
 }
 
@@ -305,25 +303,20 @@ h1{
   background: rgb(238, 238, 238);
 
   img{
-
-    max-width: 100%;
+    max-width:110%;
   }
-  .left-about{
+  
+  .about-right{
        margin-left: 3%;
        width: 550px;
+
+       p,h1{
+        text-align: left;
+       }
   }
-  
-  .left-about p, h1{
-    text-align: left;
-    
-  }
- 
 }
 
-
-
 .container-projetos {
-  
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -332,29 +325,18 @@ h1{
   background-image: url("/imagens/4104300-01.svg");
   background-attachment: fixed;
   background-size: 100%;
-  background-repeat:repeat;
+  background-repeat:no-repeat;
+
+  h1{
+    color: #f1f1f1;
+  }
+
+  @include title-header();
+  @include container-grid()
+
 }
 
-.container-projetos .title-header h1 {
-  text-align: center;
-  justify-content: center;
-  color: #f1f1f1;
-}
 
-.grid {
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.grid i {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .card-projetos {
   background-image: url("/imagens/gradiente.jpg");
@@ -396,21 +378,32 @@ h1{
 }
 
 
-
-
+fieldset, #select-contato, textarea{
+  border: none;
+  padding: 10px;
+  width: 90%;
+}
 .container-contato{
+  @media only screen  and (max-width: 600px){
+    width: 100%;
+    height: 120vh;
+  }
+
   position: relative;
   float: left;
-  height: 80vh;
+  height: 90vh;
   background:$purple;
-  padding: 10px;
-  width: 48.5%;
+  padding: 1px;
+  width: 49.8%;
   @include botao-secundario()
-  
 }
 
-
 .card-contato{
+  @media only screen  and (max-width: 600px){
+    margin-left: 3rem;
+    width: 75%;
+  }
+
   margin-left:13rem;
   width: 55%;
   margin-top:5%;
@@ -430,12 +423,7 @@ h1{
   float: right;
   width: 50%;
   height: 70vh;
-  
-
- 
-
 }
-
 
 #area-input input {
   width: 100%;
@@ -456,20 +444,26 @@ font-size: 17px;}
   background: #7204a5 linear-gradient(to right, #6d03d1, #c804e2);
   color: white;
   padding: 5px;
+  width: 106%;
+  height: 48px;
   margin: 1px;
   border-radius: 5px;
   cursor: pointer;
  }
 
 textarea {
+  @media only screen  and (max-width: 600px){
+    max-width:340px;
+  }
+
   font-size: 1.2rem;;
   position: static;
   background-color: #ffffff;
   font-family: $font;
-  max-height: 200px;
-  max-width: 450px;
+  max-height: 300px;
+  max-width:350px;
   height: 100px;
-  width: 450px;
+  width: 120%;
   padding:10px;
   border-radius: 5px;}
 
