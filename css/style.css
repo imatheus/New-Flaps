@@ -14,25 +14,17 @@ body {
   to {
     transform: translateY(30px); } }
 
-fieldset, #select-contato, textarea {
-  border: none;
-  padding: 10px;
-  width: 90%; }
-
-h1 {
-  font-size: 2.2rem; }
-
 h2 {
   font-size: 25px;
   font-weight: 800;
   font-family: Commissioner;
-  color: white;
+  color: #616161;
   text-align: center;
   margin: 10px; }
 
 h3 {
   font-family: Commissioner;
-  color: #c4c4c4;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 600;
   margin: 5px; }
@@ -97,17 +89,16 @@ p {
     height: 45px;
     border-radius: 25px;
     border: none;
-    background: #ffbe0a linear-gradient(to right, #ffb10a, #ff7b00);
+    background: #ffbe0a linear-gradient(to right, #ffbe0a, #ff7b00);
     cursor: pointer;
     font-family: Commissioner;
     font-size: 19px;
     color: #fff; }
   .banner-info button:hover {
     border: #ffbe0a 1px solid;
-    color: #fff;
+    color: orange;
     transition: 0.5s;
-    background: transparent;
-    box-shadow: 0 0.1rem 1rem #74028bc2; }
+    background: transparent; }
 
 .full-banner {
   width: 100%;
@@ -135,7 +126,7 @@ p {
     color: #fff;
     transition: 0.5s;
     border: none;
-    box-shadow: 0 0.1rem 1rem #74028bc2; }
+    box-shadow: 0 0.1rem 1rem #6303bd; }
 
 #ver-mais {
   font-family: arial;
@@ -149,17 +140,21 @@ p {
   padding: 20px;
   align-items: center; }
 
-.container-servicos .title-header h1 {
+.container-servicos {
   text-align: center;
-  justify-content: center;
-  color: #8d8d8d; }
-
-.title-header {
-  font-size: 23px;
-  color: #8d8d8d;
-  font-family: Commissioner;
-  font-variant: inherit;
-  font-weight: 200; }
+  justify-content: center; }
+  .container-servicos .title-header {
+    font-size: 23px;
+    color: #8d8d8d;
+    font-family: Commissioner;
+    font-variant: inherit;
+    font-weight: 200; }
+  .container-servicos .grid {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%; }
 
 .card-servico {
   box-shadow: 0 0.4rem 1rem #d6d6d6;
@@ -196,26 +191,22 @@ p {
     color: #fff;
     transition: 0.5s;
     border: none;
-    box-shadow: 0 0.1rem 1rem #74028bc2; }
+    box-shadow: 0 0.1rem 1rem #6303bd; }
 
 .card-servico:hover {
   transition: all 0.5s;
-  bottom: 0%;
+  bottom: 10%;
   margin-top: -1%; }
 
 .container-about {
   margin-top: 5%; }
-  .container-about h1 {
-    text-align: center;
-    padding: 3%;
-    color: #888888; }
   .container-about button {
     width: 150px;
     margin-top: 4%;
     height: 35px;
     border-radius: 20px 2px 20px 2px;
     border: none;
-    background: #ac21fd42 linear-gradient(to right, #e730ff8a, #a812ffd2);
+    background: #6303bd linear-gradient(to right, #e730ff8a, #a812ffd2);
     cursor: pointer;
     font-family: Commissioner;
     font-size: 19px;
@@ -225,6 +216,12 @@ p {
     color: #fff;
     background: #b03af5d2;
     box-shadow: rgba(143, 24, 212, 0.824) ow; }
+  .container-about .title-header {
+    font-size: 23px;
+    color: #8d8d8d;
+    font-family: Commissioner;
+    font-variant: inherit;
+    font-weight: 200; }
 
 .about {
   padding: 30px;
@@ -234,12 +231,12 @@ p {
   align-items: center;
   background: #eeeeee; }
   .about img {
-    max-width: 100%; }
-  .about .left-about {
+    max-width: 110%; }
+  .about .about-right {
     margin-left: 3%;
     width: 550px; }
-  .about .left-about p, .about h1 {
-    text-align: left; }
+    .about .about-right p, .about .about-right h1 {
+      text-align: left; }
 
 .container-projetos {
   text-align: center;
@@ -250,25 +247,21 @@ p {
   background-image: url("/imagens/4104300-01.svg");
   background-attachment: fixed;
   background-size: 100%;
-  background-repeat: repeat; }
-
-.container-projetos .title-header h1 {
-  text-align: center;
-  justify-content: center;
-  color: #f1f1f1; }
-
-.grid {
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%; }
-
-.grid i {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap; }
+  background-repeat: no-repeat; }
+  .container-projetos h1 {
+    color: #f1f1f1; }
+  .container-projetos .title-header {
+    font-size: 23px;
+    color: #8d8d8d;
+    font-family: Commissioner;
+    font-variant: inherit;
+    font-weight: 200; }
+  .container-projetos .grid {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%; }
 
 .card-projetos {
   background-image: url("/imagens/gradiente.jpg");
@@ -303,70 +296,96 @@ p {
   text-align: center;
   margin: 6px; }
 
-/*
+fieldset, #select-contato, textarea {
+  border: none;
+  padding: 10px;
+  width: 90%; }
 
-.contato{
-  position: absolute;;
+.container-contato {
+  position: relative;
   float: left;
-  height: 52rem;
-  background:rgb(98, 0, 128);
-  width: 40%; 
-  padding: 70px;
+  height: 90vh;
+  background: #6303bd;
+  padding: 1px;
+  width: 49.8%; }
+  @media only screen and (max-width: 600px) {
+    .container-contato {
+      width: 100%;
+      height: 120vh; } }
+  .container-contato button {
+    width: 10rem;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    background: #ffbe0a linear-gradient(to right, #ffbe0a, #ff7b00);
+    cursor: pointer;
+    font-family: Commissioner;
+    font-size: 19px;
+    color: #fff; }
+  .container-contato button:hover {
+    border: #ffbe0a 1px solid;
+    color: orange;
+    transition: 0.5s;
+    background: transparent; }
 
-  @include botao-primario()
-}
-
-.card-contato{
-  margin-top:10%;
-  background: #d6d6d6;
-  border-radius: 15px;
+.card-contato {
+  margin-left: 13rem;
+  width: 55%;
+  margin-top: 5%;
+  background: #fafafa;
+  border-radius: 10px;
   padding: 20px;
-  flex-wrap: wrap;
-  width: 60%; 
-}
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 600px) {
+    .card-contato {
+      margin-left: 3rem;
+      width: 75%; } }
 
-#area-input {
-  border:none;
-  border-radius: 15px;
-  
-}
+.container-map {
+  float: right;
+  width: 50%;
+  height: 70vh; }
+  @media only screen and (max-width: 600px) {
+    .container-map {
+      width: 100%; } }
 
 #area-input input {
   width: 100%;
   height: 1.2rem;
   padding: 15px;
-  background-color:#ffffff;
+  background-color: #ffffff;
   margin: 1px;
   border-radius: 5px;
   border: #e2e2e2 1px solid;
-  font-family: $font;
+  font-family: Commissioner;
   color: #6303bd;
-font-size: 17px;}
-
+  font-size: 17px; }
 
 #select-contato {
-  flex-wrap: wrap;
-  align-items: center;
-  font-size: 1.4rem;
-  font-family: $font;
+  font-size: 20px;
+  font-family: Commissioner;
   background: #7204a5 linear-gradient(to right, #6d03d1, #c804e2);
   color: white;
-  padding: 10px;
-  margin: 5px;
-
-  cursor: pointer;
-  border-radius: 25px; }
+  padding: 5px;
+  width: 106%;
+  height: 48px;
+  margin: 1px;
+  border-radius: 5px;
+  cursor: pointer; }
 
 textarea {
-  background-color: #ffffff;
   font-size: 1.2rem;
-  font-family: $font;
-  max-width: 570px;
-  width: 100%;
-  max-height: 200px;
-  border-radius: 5px;
-  padding: 12px;}
-
-
+  position: static;
+  background-color: #ffffff;
+  font-family: Commissioner;
+  max-height: 300px;
+  max-width: 350px;
+  height: 100px;
+  width: 120%;
+  padding: 10px;
+  border-radius: 5px; }
+  @media only screen and (max-width: 600px) {
+    textarea {
+      max-width: 340px; } }
 
 /*# sourceMappingURL=style.css.map */
