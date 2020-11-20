@@ -2,195 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Tajawal&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+@import './global.scss';
 
-* {
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
-body{
-  background-color: #F7F7F7;
-}
-
-$gray:rgb(214, 214, 214);
-$purple:#6303bd;
-$orange:#ffbe0a;
-$font:Commissioner;
-$font-h1: Rubik;
-$box-shadow: 0 0.4rem 1rem $gray !default;
-$box-shadow-purple: 0 0.1rem 1rem $purple !default;
-
-@keyframes pulando{
-to{
-  transform: translateY(30px);
-}
-}
-
-@mixin botao-primario {
-     button {
-        width: 20rem;
-        padding: 10px;
-        border-radius: 25px;
-        border: #d794fd 1px solid;
-        cursor: pointer;
-        font-family:$font;
-        font-size: 19px;
-        font-weight: 600;
-        color: #9d0aff;
-        background:transparent;
-      }
-      button:hover{
-            background: #ba04df linear-gradient(to right, #6303bd, #c804e2);
-            color: #fff;
-            transition: 0.5s;
-            border:none;
-            box-shadow: $box-shadow-purple;
-
-      }
-}
-
-@mixin botao-secundario {
-  button {
-    width: 10rem;
-    height: 45px;
-    border-radius: 25px;
-    border:none;
-    background:$orange linear-gradient(to right, $orange, #ff7b00);
-    cursor: pointer;
-    font-family:$font;
-    font-size: 19px;
-    color: #fff;
-   
-  }
-  button:hover{
-        border:#ffbe0a 1px solid;
-        color: orange;
-        transition: 0.5s;
-        background: transparent;
-  }
-
-}
-
-@mixin botao-purple-primary {
-
-  button {
-    width:150px;
-    margin-top:4%;
-    height: 35px;
-    border-radius: 20px 2px 20px 2px;
-    border:none;
-    background: $purple linear-gradient(to right, #e730ff8a, #a812ffd2);
-    cursor: pointer;
-    font-family:$font;
-    font-size: 19px;
-    color: #fff;
-   
-  }
-  button:hover{
-        border:none;
-        color: #fff;
-        background: #b03af5d2;
-        box-shadow: rgba(143, 24, 212, 0.824)ow;
-  }
-
-}
-
-@mixin title-header {
-  .title-header {
-    font-size: 23px;
-    color: #8d8d8d;
-    font-family: $font;
-    font-variant: inherit;
-    font-weight: 200;
-  
-  }
-}
-
-@mixin container-grid {
-  .grid {
-    margin-top: 2%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-}
-
-
-h2{
-  font-size: 25px;
-  font-weight: 800;
-  font-family: $font;
-  color: rgb(97, 97, 97);
-  text-align: center;
-  margin: 10px;
-}
-h3{
-  font-family:$font;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 600;
-  margin: 5px;
-}
-p{
-  font-family:$font;
-  color: #464545;
-  font-size: 18px;
-  margin: 5px;
-}
-
-#logo{
-  position: absolute;
-  margin: 10px;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: -5%;
-  width: 100%;
-
-  ul{
-    display: inline-flex;
-    margin-left: 25%;
-    align-items: center;
-  }
-
-  li {
-    font-family: $font;
-    color:#fff;
-    font-weight: 700;
-    font-size: 1.1rem;
-    margin: 10px;
-    transition: 0.3s;
-  }
-
-  li:hover{
-    transition: all 0.1s;
-    margin-top: -1px;
-    -ms-zoom-animation: abs($number: 1);
-  }
- #trabalhe-conosco{
-    background:#c60aff linear-gradient(to right, #ce0aff, #ff7b00);
-    border-radius: 20px 5px;
-    padding: 7px;
-  }
-
-  #trabalhe-conosco:hover{
-    background:#c60aff linear-gradient(to right, #ff7b00, #ce0aff);
-  }
-}
-
-
-
-#seta{
+#setaUp{
   animation: pulando 1s ease-out alternate infinite;
   margin-top: -13%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header{
-  width: 100%;   
+
+.headerDown{
+  width: 100%;
 
 }
 
@@ -202,13 +25,12 @@ p{
    h1{
      font-size: 4rem;
      color: azure;
-     font-family: $font-h1;
+     font-family: $font-title;
      font-weight: 300;
    }
  
-   @include botao-secundario()
-   
-  
+   @include button-orange-secondary()
+
  }
 
 .full-banner{
@@ -225,7 +47,7 @@ width:100%;
   margin-top: 10%;
   margin-left: 5%;
 
-  @include botao-primario();   
+  @include button-purple-primary();   
  
 }
 #ver-mais{
@@ -241,8 +63,6 @@ width:100%;
 align-items: center;
 }
 
-
-
 .container-servicos {
   text-align: center;
   justify-content: center;
@@ -254,7 +74,7 @@ align-items: center;
 
 
 .card-servico {
-  box-shadow: $box-shadow;
+  box-shadow: $box-shadow-gray;
   margin-top: 10%;
   padding: 18px;
   width: 350px;
@@ -277,7 +97,7 @@ p{
     text-align: left;
 }
 
-@include botao-primario()
+@include button-purple-primary()
 }
 
 .card-servico:hover{
@@ -289,7 +109,7 @@ p{
 
 .container-about{
 margin-top: 5%;
-@include botao-purple-primary();
+@include button-purple-secondary();
 @include title-header()
 
 }
@@ -383,19 +203,20 @@ fieldset, #select-contato, textarea{
   padding: 10px;
   width: 90%;
 }
+
 .container-contato{
   @media only screen  and (max-width: 600px){
     width: 100%;
-    height: 120vh;
+    height: 150vh;
   }
 
   position: relative;
   float: left;
-  height: 90vh;
+  height: 50rem;
   background:$purple;
   padding: 1px;
   width: 49.8%;
-  @include botao-secundario()
+  @include button-orange-secondary()
 }
 
 .card-contato{
@@ -404,12 +225,12 @@ fieldset, #select-contato, textarea{
     width: 75%;
   }
 
-  margin-left:13rem;
-  width: 55%;
+  margin-left:6rem;
+  width:66%;
   margin-top:5%;
   background: #fafafa;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
   flex-wrap: wrap;
  
 }
@@ -440,11 +261,11 @@ font-size: 17px;}
 
 #select-contato {
   font-size: 20px;
-  font-family: $font;
+  font-family: $font-paragraph;
   background: #7204a5 linear-gradient(to right, #6d03d1, #c804e2);
   color: white;
   padding: 5px;
-  width: 106%;
+  width: 108%;
   height: 48px;
   margin: 1px;
   border-radius: 5px;
@@ -459,7 +280,7 @@ textarea {
   font-size: 1.2rem;;
   position: static;
   background-color: #ffffff;
-  font-family: $font;
+  font-family: font-paragraph;
   max-height: 300px;
   max-width:350px;
   height: 100px;

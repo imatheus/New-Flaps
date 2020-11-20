@@ -1,0 +1,182 @@
+
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body{
+    background-color: #F7F7F7;
+  }
+  
+
+  $gray:rgb(214, 214, 214 );
+  $purple:#6303bd;
+  $orange:#ffbe0a;
+  $font:Commissioner;
+  $font-title: Rubik;
+  $box-shadow-gray: 0 0.4rem 1rem $gray !default;
+  $box-shadow-purple: 0 0.1rem 1rem $purple !default;
+
+
+   
+.headerUp{
+    position: absolute;
+    margin: 10px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -5%;
+    width: 100%;
+  
+    ul{
+      display: inline-flex;
+      margin-left: 25%;
+      align-items: center;
+    }
+  
+    li {
+      font-family: $font;
+      color:#fff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin: 10px;
+      transition: 0.3s;
+    }
+  
+    li:hover{
+      transition: all 0.1s;
+      margin-top: -1px;
+      -ms-zoom-animation: abs($number: 1);
+    }
+   #orcamento{
+      background:#c60aff linear-gradient(to right, #ce0aff, #ff7b00);
+      border-radius: 20px 5px;
+      padding: 7px;
+    }
+  
+    #orcamento:hover{
+      background:#c60aff linear-gradient(to right, #ff7b00, #ce0aff);
+    }
+  }
+  
+  
+  
+  @keyframes pulando{
+  to{
+    transform: translateY(30px);
+  }
+  }
+  
+  @mixin button-purple-primary {
+       button {
+          width: 20rem;
+          padding: 10px;
+          border-radius: 25px;
+          border: #d794fd 1px solid;
+          cursor: pointer;
+          font-family:$font;
+          font-size: 19px;
+          font-weight: 600;
+          color: #9d0aff;
+          background:transparent;
+        }
+        button:hover{
+              background: #ba04df linear-gradient(to right, #6303bd, #c804e2);
+              color: #fff;
+              transition: 0.5s;
+              border:none;
+              box-shadow: $box-shadow-purple;
+  
+        }
+  }
+  
+  @mixin button-purple-secondary {
+  
+    button {
+      width:150px;
+      margin-top:4%;
+      height: 35px;
+      border-radius: 20px 2px 20px 2px;
+      border:none;
+      background: $purple linear-gradient(to right, #e730ff8a, #a812ffd2);
+      cursor: pointer;
+      font-family:$font;
+      font-size: 19px;
+      color: #fff;
+     
+    }
+    button:hover{
+          border:none;
+          color: #fff;
+          background: #b03af5d2;
+          box-shadow: rgba(143, 24, 212, 0.824)ow;
+    }
+  
+  }
+
+  @mixin button-orange-secondary {
+    button {
+      width: 10rem;
+      height: 45px;
+      border-radius: 25px;
+      border:none;
+      background:$orange linear-gradient(to right, $orange, #ff7b00);
+      cursor: pointer;
+      font-family:$font;
+      font-size: 19px;
+      color: #fff;
+     
+    }
+    button:hover{
+          border:#ffbe0a 1px solid;
+          color: orange;
+          transition: 0.5s;
+          background: transparent;
+    }
+  
+  }
+ 
+  @mixin title-header {
+    .title-header {
+      font-size: 23px;
+      color: #8d8d8d;
+      font-family: $font;
+      font-variant: inherit;
+      font-weight: 200;
+    
+    }
+  }
+  
+  @mixin container-grid {
+    .grid {
+      margin-top: 2%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+  
+  h2{
+    font-size: 25px;
+    font-weight: 800;
+    font-family: $font;
+    color: rgb(97, 97, 97);
+    text-align: center;
+    margin: 10px;
+  }
+  h3{
+    font-family:$font;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px;
+  }
+  p{
+    font-family:$font;
+    color: #464545;
+    font-size: 18px;
+    margin: 5px;
+  }
+  

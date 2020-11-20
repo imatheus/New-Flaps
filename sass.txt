@@ -1,2 +1,6 @@
 node-sass --watch scss/style.scss css/style.css
 node-sass sass/style.scss css/style.css
+
+
+node-sass --watch scss/global.scss css/global.css
+node-sass scss/global.scss css/global.css

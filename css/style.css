@@ -2,13 +2,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Tajawal&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
 * {
-  margin: 0;
+  margin: 10px;
   text-decoration: none;
   list-style: none; }
 
 body {
-  background-color: #F7F7F7; }
+  background-color: #f71e1e; }
+
+.headerUp {
+  position: absolute;
+  margin: 10px;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: -5%;
+  width: 100%; }
+  .headerUp ul {
+    display: inline-flex;
+    margin-left: 25%;
+    align-items: center; }
+  .headerUp li {
+    font-family: Commissioner;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 10px;
+    transition: 0.3s; }
+  .headerUp li:hover {
+    transition: all 0.1s;
+    margin-top: -1px;
+    -ms-zoom-animation: 1; }
+  .headerUp #orcamento {
+    background: #c60aff linear-gradient(to right, #ce0aff, #ff7b00);
+    border-radius: 20px 5px;
+    padding: 7px; }
+  .headerUp #orcamento:hover {
+    background: #c60aff linear-gradient(to right, #ff7b00, #ce0aff); }
 
 @keyframes pulando {
   to {
@@ -35,44 +66,14 @@ p {
   font-size: 18px;
   margin: 5px; }
 
-#logo {
-  position: absolute;
-  margin: 10px;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: -5%;
-  width: 100%; }
-  #logo ul {
-    display: inline-flex;
-    margin-left: 25%;
-    align-items: center; }
-  #logo li {
-    font-family: Commissioner;
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.1rem;
-    margin: 10px;
-    transition: 0.3s; }
-  #logo li:hover {
-    transition: all 0.1s;
-    margin-top: -1px;
-    -ms-zoom-animation: 1; }
-  #logo #trabalhe-conosco {
-    background: #c60aff linear-gradient(to right, #ce0aff, #ff7b00);
-    border-radius: 20px 5px;
-    padding: 7px; }
-  #logo #trabalhe-conosco:hover {
-    background: #c60aff linear-gradient(to right, #ff7b00, #ce0aff); }
-
-#seta {
+#setaUp {
   animation: pulando 1s ease-out alternate infinite;
   margin-top: -13%;
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.header {
+.headerDown {
   width: 100%; }
 
 .banner-info {
@@ -304,14 +305,14 @@ fieldset, #select-contato, textarea {
 .container-contato {
   position: relative;
   float: left;
-  height: 90vh;
+  height: 50rem;
   background: #6303bd;
   padding: 1px;
   width: 49.8%; }
   @media only screen and (max-width: 600px) {
     .container-contato {
       width: 100%;
-      height: 120vh; } }
+      height: 150vh; } }
   .container-contato button {
     width: 10rem;
     height: 45px;
@@ -329,12 +330,12 @@ fieldset, #select-contato, textarea {
     background: transparent; }
 
 .card-contato {
-  margin-left: 13rem;
-  width: 55%;
+  margin-left: 6rem;
+  width: 66%;
   margin-top: 5%;
   background: #fafafa;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
   flex-wrap: wrap; }
   @media only screen and (max-width: 600px) {
     .card-contato {
@@ -367,7 +368,7 @@ fieldset, #select-contato, textarea {
   background: #7204a5 linear-gradient(to right, #6d03d1, #c804e2);
   color: white;
   padding: 5px;
-  width: 106%;
+  width: 108%;
   height: 48px;
   margin: 1px;
   border-radius: 5px;
