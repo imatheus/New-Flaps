@@ -2,14 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Tajawal&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
-
 * {
-  margin: 10px;
+  margin: 0;
   text-decoration: none;
   list-style: none; }
 
-body {
-  background-color: #f71e1e; }
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #F7F7F7; }
 
 .headerUp {
   position: absolute;
@@ -34,12 +35,6 @@ body {
     transition: all 0.1s;
     margin-top: -1px;
     -ms-zoom-animation: 1; }
-  .headerUp #orcamento {
-    background: #c60aff linear-gradient(to right, #ce0aff, #ff7b00);
-    border-radius: 20px 5px;
-    padding: 7px; }
-  .headerUp #orcamento:hover {
-    background: #c60aff linear-gradient(to right, #ff7b00, #ce0aff); }
 
 @keyframes pulando {
   to {
@@ -85,21 +80,45 @@ p {
     color: azure;
     font-family: Rubik;
     font-weight: 300; }
-  .banner-info button {
-    width: 10rem;
-    height: 45px;
-    border-radius: 25px;
+  .banner-info #orcamento {
+    background: #c60aff linear-gradient(to right, #c60aff, #ff7b00);
+    border-radius: 20px 0px;
     border: none;
-    background: #ffbe0a linear-gradient(to right, #ffbe0a, #ff7b00);
-    cursor: pointer;
-    font-family: Commissioner;
-    font-size: 19px;
-    color: #fff; }
-  .banner-info button:hover {
-    border: #ffbe0a 1px solid;
-    color: orange;
-    transition: 0.5s;
-    background: transparent; }
+    padding: 12px;
+    width: 12rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer; }
+  .banner-info #orcamento:hover {
+    background: #c60aff; }
+
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 2, 2, 0.774);
+  position: fixed;
+  z-index: 2;
+  top: -100%;
+  display: block;
+  transition: 0.5s; }
+  .bg-modal .modal {
+    margin: 80px auto 0 auto;
+    width: 60%;
+    height: 70%;
+    background: #fff;
+    border-radius: 5px; }
+    .bg-modal .modal .close {
+      float: right;
+      font-size: 26px;
+      margin: 10px;
+      color: #6303bd;
+      transition: 350ms;
+      cursor: pointer; }
+
+.close:hover {
+  color: #9000b4;
+  transition: 350ms; }
 
 .full-banner {
   width: 100%;
@@ -231,8 +250,11 @@ p {
   display: flex;
   align-items: center;
   background: #eeeeee; }
-  .about img {
-    max-width: 110%; }
+  @media only screen and (max-width: 600px) {
+    .about img {
+      width: 100%;
+      height: 100%;
+      padding: 10px; } }
   .about .about-right {
     margin-left: 3%;
     width: 550px; }
@@ -314,7 +336,7 @@ fieldset, #select-contato, textarea {
       width: 100%;
       height: 150vh; } }
   .container-contato button {
-    width: 10rem;
+    width: 15rem;
     height: 45px;
     border-radius: 25px;
     border: none;
@@ -378,7 +400,7 @@ textarea {
   font-size: 1.2rem;
   position: static;
   background-color: #ffffff;
-  font-family: Commissioner;
+  font-family: font-paragraph;
   max-height: 300px;
   max-width: 350px;
   height: 100px;
