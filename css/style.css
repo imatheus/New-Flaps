@@ -49,11 +49,19 @@ h2 {
   margin: 10px; }
 
 h3 {
+  text-align: center;
   font-family: Commissioner;
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
   margin: 5px; }
+
+h4 {
+  font-size: 15px;
+  font-family: Commissioner;
+  color: #070707;
+  text-align: center;
+  margin: 1px; }
 
 p {
   font-family: Commissioner;
@@ -82,7 +90,7 @@ p {
     font-weight: 300; }
   .banner-info #orcamento {
     background: #c60aff linear-gradient(to right, #c60aff, #ff7b00);
-    border-radius: 20px 0px;
+    border-radius: 25px 25px 0px 25px;
     border: none;
     padding: 12px;
     width: 12rem;
@@ -96,18 +104,19 @@ p {
 .bg-modal {
   width: 100%;
   height: 100%;
-  background: rgba(2, 2, 2, 0.774);
+  background: rgba(2, 2, 2, 0.897);
   position: fixed;
   z-index: 2;
-  top: -100%;
+  left: -100%;
   display: block;
-  transition: 0.5s; }
+  transition: 0.4s; }
   .bg-modal .modal {
+    padding: 10px;
     margin: 80px auto 0 auto;
-    width: 60%;
-    height: 70%;
+    width: 50%;
+    height: 30rem;
     background: #fff;
-    border-radius: 5px; }
+    border-radius: 15px; }
     .bg-modal .modal .close {
       float: right;
       font-size: 26px;
@@ -119,6 +128,104 @@ p {
 .close:hover {
   color: #9000b4;
   transition: 350ms; }
+
+.title-modal h3 {
+  color: #6303bd; }
+
+.tasks-modal {
+  height: 90%;
+  width: 100%; }
+  .tasks-modal .services {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    border-radius: 5px;
+    background: #dddddd; }
+    .tasks-modal .services h3 {
+      color: #6303bd; }
+    .tasks-modal .services fieldset {
+      width: 50%; }
+  .tasks-modal .design {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    border-radius: 5px;
+    background: #dddddd; }
+    .tasks-modal .design h3 {
+      color: #6303bd; }
+    .tasks-modal .design fieldset {
+      width: 58%;
+      display: flex;
+      border-radius: 5px;
+      border: 1px #6303bd solid; }
+    .tasks-modal .design input {
+      border: 1px #6303bd solid;
+      height: 25px;
+      width: 16%; }
+  .tasks-modal .prazo {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #dddddd; }
+    .tasks-modal .prazo h3 {
+      color: #6303bd; }
+    .tasks-modal .prazo fieldset {
+      width: 59%;
+      justify-content: left;
+      display: flex; }
+  .tasks-modal .name-email {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px; }
+    .tasks-modal .name-email input {
+      border-radius: 7px;
+      border: 1px #6303bd solid;
+      width: 85%;
+      font-size: 17px;
+      padding: 10px;
+      height: 30px;
+      justify-content: left;
+      display: flex; }
+  .tasks-modal .btn {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    margin-top: 5%; }
+    .tasks-modal .btn button {
+      width: 30rem;
+      height: 45px;
+      border-radius: 25px;
+      border: none;
+      background: #ffbe0a linear-gradient(to right, #ffbe0a, #ff7b00);
+      cursor: pointer;
+      font-family: Commissioner;
+      font-size: 19px;
+      color: #fff; }
+    .tasks-modal .btn button:hover {
+      border: #ffbe0a 1px solid;
+      color: orange;
+      transition: 0.5s;
+      background: transparent; }
+
+input[type="text"] {
+  height: 20px;
+  margin: -2px;
+  margin-left: 2px;
+  border-radius: 2px;
+  border: none; }
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 30px; }
 
 .full-banner {
   width: 100%;
@@ -336,7 +443,7 @@ fieldset, #select-contato, textarea {
       width: 100%;
       height: 150vh; } }
   .container-contato button {
-    width: 15rem;
+    width: 30rem;
     height: 45px;
     border-radius: 25px;
     border: none;

@@ -1,8 +1,8 @@
 
 function openModal() {
-    document.getElementById('bg-modal').style.top = "0";
+    document.getElementById('bg-modal').style.left = "0";
 }
 function closeModal() {
-    document.getElementById('bg-modal').style.top = "-100%";
+    document.getElementById('bg-modal').style.left = "-100%";
 }
 

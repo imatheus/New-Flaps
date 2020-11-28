@@ -15,9 +15,70 @@
     
 </head>
 <body>
-    <div class="bg-modal" onclick="closeModal()" id="bg-modal">
+    <div class="bg-modal"  id="bg-modal">
         <div class="modal">
             <span onclick="closeModal()" class="close"><i class="fas fa-times-circle"></i></span>
+
+                <div class="tasks-modal">
+                    <div class="title-modal">
+                        <h2>Boa noite!</h2>
+                    </div> <br><p></p>
+
+                    <div class="name-email">
+                        <fieldset>
+                            <input name="Nome" placeholder=" Digite seu nome completo" type="text" size="45" >
+                        </fieldset> 
+                        <fieldset>
+                            <input name="Nome" placeholder="E-mail" type="email" size="45" >
+                        </fieldset> 
+
+                    </div> <br>
+
+                    <div class="services">
+                        
+                        <h3>Qual serviço você procura?</h3>
+                        <fieldset>
+              
+                            <select id="select-contato" name="Ramo">
+                                <option value="web">💻 Desenvolvimento Web</option>
+                                <option value="social-midia">🚀 Mídias Sociais</option>
+                                <option value="Ads">📊 Tráfego</option>
+                                <option value="emkt"> 📩 Email Marketing</option>
+                                
+                            </select>
+                          
+                    </fieldset>
+
+                    </div> <br>
+
+                    <div class="design">
+                        <h3>Você já tem um site?</h3>
+                        <fieldset>
+                            <input type="checkbox"><h4>Já tenho</h4></input>
+                            <input type="checkbox"><h4>Não tenho</h4></input>
+                        </fieldset>
+
+                    </div> <br>
+
+                    
+                    <div class="prazo">
+                        <h3>Seu prazo é de:</h3>
+                        <fieldset>
+                            <select id="select-contato" name="Ramo">
+                                <option value="web"> 1-4 Semanas</option>
+                                <option value="social-midia">2 Meses</option>
+                                <option value="Ads">6 Meses</option>
+                                <option value="emkt"> 12 Meses</option>
+                            </select>
+                        </fieldset>
+
+                    </div>
+                    <div class="btn">
+                        <a href=""><button>Enviar</button></a>
+                    </div>
+             
+                </div>
+        
         </div>
     </div>
     
@@ -30,7 +91,7 @@
            <a href="#"> <li>Home</li></a>
             <a href="#"> <li>Soluções</li></a>
            <a href="#"> <li>Sobre</li></a>
-           <a href="#"> <li>Fale Conosco</li></a>
+           <a href="#"> <li>Contato</li></a>
           
         </ul>
 
@@ -41,7 +102,7 @@
             <img src="/imagens/19199731 [Convertido]-01.svg" alt="">
         <div class="banner-info">
             <h1>Abra novas abas <br> para o seu <br> negócio hoje</h1><br>
-          <a href="#"> <button onclick="openModal()" id="orcamento">Faça um orçamento</button></a>
+          <a href="#"> <button onclick="openModal()" id="orcamento">Preciso de um Site</button></a>
         </div>
         </div>
 
@@ -191,8 +252,6 @@
                        <option value="emkt"> 📩 Email Marketing</option>
                    </select>
                  
-
-               </div>
            </fieldset>
 
            <fieldset>
