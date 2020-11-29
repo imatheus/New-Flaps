@@ -6,7 +6,7 @@
 
 #setaUp{
   animation: pulando 1s ease-out alternate infinite;
-  margin-top: -13%;
+  margin-top: -15%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +201,7 @@ width:100%;
 .container-servicos {
   flex-wrap: wrap;
   margin-top: 10%;
-  margin-left: 5%;
+  margin-left: -2%;
 
   @include button-purple-primary();   
  
@@ -306,7 +306,7 @@ margin-top: 5%;
   align-items: center;
   display: grid;
   padding: 10rem;
-  background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://wallpaperset.com/w/full/3/3/e/434982.jpg");
   background-attachment:fixed;
   background-size: 100%;
   background-repeat:no-repeat;
@@ -323,13 +323,32 @@ margin-top: 5%;
 
 
 .card-projetos {
-  background-image: url("https://www.muralswallpaper.com/app/uploads/purple-bright-gradient-wallpaper-mural-Plain-820x532.jpg");
   background-repeat: no-repeat;
   background-size: 600px;
   width: 330px;
   margin: 5px;
-;
 }
+#project1{
+  background-image: url('../imagens/projects/55.png');
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: center;
+}
+
+#project2{
+  background-image: url('../imagens/projects/56.jpg');
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: center;
+}
+
+#project3{
+  background-image: url('../imagens/projects/57.png');
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: center;
+}
+
 
 .card-projetos:hover {
   opacity: 0.9;
@@ -338,7 +357,7 @@ margin-top: 5%;
 
 .card-info {
   visibility: hidden;
-  margin-top: 50%;
+  margin-top: 70%;
   padding: 10px;
   color: #fff;
   cursor: pointer;
@@ -351,7 +370,7 @@ margin-top: 5%;
 .card-projetos:hover .card-info {
   visibility: visible;
   opacity: 1;
-  margin-top: 45%;
+  margin-top: 60%;
   transition: all 0.5s;
   text-align: center;
   
