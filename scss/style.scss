@@ -39,11 +39,15 @@ position: fixed;
 z-index:2;
 left: -100%;
 display: block;
-transition: 0.4s;
+transition: 150ms;
 
 .modal{
-  padding: 10px;
-margin: 80px auto 0 auto;
+
+  @media only screen  and (max-width: 600px){
+    width: 90%;
+  }
+padding: 10px;
+margin: 50px auto 0 auto;
 width: 50%;
 height: 30rem;
 background:#fff;
@@ -144,7 +148,7 @@ border-radius:15px;
         border-radius: 7px;
         border: 1px #6303bd solid;
         width: 85%;
-        font-size: 17px;
+        font-size: 19px;
         padding: 10px;
         height: 30px;
         justify-content: left;

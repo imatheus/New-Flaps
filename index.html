@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Flaps - Sua Agência Digital </title>
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
@@ -85,7 +85,7 @@
 
     <header class="headerDow">
         <div class="headerUp">
-        <a href="#"> <img src="/imagens/logo - branca.png" alt=""></a>
+        <a href="#"> <img src="imagens/logo - branca.png" alt=""></a>
 
         <ul>
            <a href="#"> <li>Home</li></a>
@@ -99,10 +99,10 @@
 
 
         <div class="full-banner">
-            <img src="/imagens/19199731 [Convertido]-01.svg" alt="">
+            <img src="imagens/19199731 [Convertido]-01.svg" alt="">
         <div class="banner-info">
             <h1>Abra novas abas <br> para o seu <br> negócio hoje</h1><br>
-          <a href="#"> <button onclick="openModal()" id="orcamento">Preciso de um Site</button></a>
+          <a href="#"> <button onclick="openModal()" id="orcamento">Faça um orçamento</button></a>
         </div>
         </div>
 
@@ -123,7 +123,7 @@
           
       <div class="grid">
         <div class="card-servico" id="service1">
-            <img src="/imagens/baixados.jpg" height="230">
+            <img src="imagens/baixados.jpg" height="230">
             <div class="textservice">
                <p>Layouts responsivos e um design único sob medida para o seu negócio, <br>adotando ótimas estratégias de SEO. 
                 garantindo uma ótima experiência para os seus futuros clientes.
@@ -135,7 +135,7 @@
   
   
         <div class="card-servico" id="service1">
-          <img src="/imagens/baixados.jpg" height="230">
+          <img src="imagens/baixados.jpg" height="230">
           <div class="textservice">
             <p>As mídias sociais são um excelente canal para você saber o que as pessoas <br> estão pensando sobre a sua marca.  Não é apenas importante, mas também necessário.</p>
                <a href=""><button>Mídias Sociais</button></a>
@@ -145,7 +145,7 @@
   
   
       <div class="card-servico" id="service">
-          <img src="/imagens/baixados.jpg" height="230">
+          <img src="imagens/baixados.jpg" height="230">
           <div class="textservice">
               <p>A ferramenta permite configurar os anúncios para que somente pessoas <br> interessadas em determinados produtos ou serviços sejam impactadas.</p>
                <a href=""> <button>Ads</button></a>
@@ -173,7 +173,7 @@
 <section class="container-about">
  
 <div class="about">
-    <img style="border-radius: 70px 0px 70px 0px;" src="/imagens/eugene.jpg" height="450"  alt="">
+    <img style="border-radius: 70px 0px 70px 0px;" src="imagens/eugene.jpg" height="450"  alt="">
     <div class="about-right">
         <div class="title-header">
             <h1> Day after Day</h1>
@@ -269,6 +269,15 @@
 
 </body>
 
-<script src="/js/modal.js"></script>
+<script>
+
+function openModal() {
+    document.getElementById('bg-modal').style.left = "0";
+}
+function closeModal() {
+    document.getElementById('bg-modal').style.left = "-100%";
+}
+
+</script>
 
 </html>

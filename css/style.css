@@ -109,14 +109,17 @@ p {
   z-index: 2;
   left: -100%;
   display: block;
-  transition: 0.4s; }
+  transition: 150ms; }
   .bg-modal .modal {
     padding: 10px;
-    margin: 80px auto 0 auto;
+    margin: 50px auto 0 auto;
     width: 50%;
     height: 30rem;
     background: #fff;
     border-radius: 15px; }
+    @media only screen and (max-width: 600px) {
+      .bg-modal .modal {
+        width: 90%; } }
     .bg-modal .modal .close {
       float: right;
       font-size: 26px;
@@ -189,7 +192,7 @@ p {
       border-radius: 7px;
       border: 1px #6303bd solid;
       width: 85%;
-      font-size: 17px;
+      font-size: 19px;
       padding: 10px;
       height: 30px;
       justify-content: left;
@@ -201,7 +204,7 @@ p {
     height: 50px;
     margin-top: 5%; }
     .tasks-modal .btn button {
-      width: 30rem;
+      width: 26rem;
       height: 45px;
       border-radius: 25px;
       border: none;
@@ -443,7 +446,7 @@ fieldset, #select-contato, textarea {
       width: 100%;
       height: 150vh; } }
   .container-contato button {
-    width: 30rem;
+    width: 26rem;
     height: 45px;
     border-radius: 25px;
     border: none;
