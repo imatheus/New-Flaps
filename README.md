@@ -1,5 +1,5 @@
 <h1 align="center">
-🏢<br>![New Flap's](https://newflaps.com.br/)
+🏢<br>[![NPM](https://img.shields.io/npm/v/yellowstone.svg)](https://www.npmjs.com/package/yellowstone)
 </h1>
 
 <h4 align="center">
