@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Flaps - Sua Agência Digital </title>
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
@@ -15,34 +15,100 @@
     
 </head>
 <body>
+    <div class="bg-modal"  id="bg-modal">
+        <div class="modal">
+            <span onclick="closeModal()" class="close"><i class="fas fa-times-circle"></i></span>
+
+                <div class="tasks-modal">
+                    <div class="title-modal">
+                        <h2>Boa noite!</h2>
+                    </div> <br><p></p>
+
+                    <div class="name-email">
+                        <fieldset>
+                            <input name="Nome" placeholder=" Digite seu nome completo" type="text" size="45" >
+                        </fieldset> 
+                        <fieldset>
+                            <input name="Nome" placeholder="E-mail" type="email" size="45" >
+                        </fieldset> 
+
+                    </div> <br>
+
+                    <div class="services">
+                        
+                        <h3>Qual serviço você procura?</h3>
+                        <fieldset>
+              
+                            <select id="select-contato" name="Ramo">
+                                <option value="web">💻 Desenvolvimento Web</option>
+                                <option value="social-midia">🚀 Mídias Sociais</option>
+                                <option value="Ads">📊 Tráfego</option>
+                                <option value="emkt"> 📩 Email Marketing</option>
+                                
+                            </select>
+                          
+                    </fieldset>
+
+                    </div> <br>
+
+                    <div class="design">
+                        <h3>Você já tem um site?</h3>
+                        <fieldset>
+                            <input type="checkbox"><h4>Já tenho</h4></input>
+                            <input type="checkbox"><h4>Não tenho</h4></input>
+                        </fieldset>
+
+                    </div> <br>
+
+                    
+                    <div class="prazo">
+                        <h3>Seu prazo é de:</h3>
+                        <fieldset>
+                            <select id="select-contato" name="Ramo">
+                                <option value="web"> 1-4 Semanas</option>
+                                <option value="social-midia">2 Meses</option>
+                                <option value="Ads">6 Meses</option>
+                                <option value="emkt"> 12 Meses</option>
+                            </select>
+                        </fieldset>
+
+                    </div>
+                    <div class="btn">
+                        <a href=""><button>Enviar</button></a>
+                    </div>
+             
+                </div>
+        
+        </div>
+    </div>
     
 
     <header class="headerDow">
         <div class="headerUp">
-        <a href="#"> <img src="/imagens/logo - branca.png" alt=""></a>
+        <a href="#"> <img src="imagens/logo - branca.png" alt=""></a>
 
         <ul>
            <a href="#"> <li>Home</li></a>
             <a href="#"> <li>Soluções</li></a>
            <a href="#"> <li>Sobre</li></a>
-           <a href="#"> <li id="orcamento">Faça um orçamento</li></a>
+           <a href="#"> <li>Contato</li></a>
+          
         </ul>
 
         </div>
 
 
         <div class="full-banner">
-            <img src="/imagens/19199731 [Convertido]-01.svg" alt="">
+            <img src="imagens/19199731 [Convertido]-01.svg" alt="">
         <div class="banner-info">
             <h1>Abra novas abas <br> para o seu <br> negócio hoje</h1><br>
-            <button>Ver mais</button>
+          <a href="#"> <button onclick="openModal()" id="orcamento">Faça um orçamento</button></a>
+        </div>
+        </div>
 
-        </div>
-    
-        </div>
-        
-    
     </div>
+    
+
     <div id="setaUp">
         <img src="https://www.imagemeventos.com/public/img/seta.png" height=60" alt="">
     </div>
@@ -57,21 +123,19 @@
           
       <div class="grid">
         <div class="card-servico" id="service1">
-            <img src="/imagens/baixados.jpg" height="230">
+            <img src="imagens/baixados.jpg" height="230">
             <div class="textservice">
                <p>Layouts responsivos e um design único sob medida para o seu negócio, <br>adotando ótimas estratégias de SEO. 
                 garantindo uma ótima experiência para os seus futuros clientes.
                 .</p>
                   <a href=""><button>Desenvolviemento Web</button></a>
             </div>
-            
-         
         </div>
   
   
   
         <div class="card-servico" id="service1">
-          <img src="/imagens/baixados.jpg" height="230">
+          <img src="imagens/baixados.jpg" height="230">
           <div class="textservice">
             <p>As mídias sociais são um excelente canal para você saber o que as pessoas <br> estão pensando sobre a sua marca.  Não é apenas importante, mas também necessário.</p>
                <a href=""><button>Mídias Sociais</button></a>
@@ -81,7 +145,7 @@
   
   
       <div class="card-servico" id="service">
-          <img src="/imagens/baixados.jpg" height="230">
+          <img src="imagens/baixados.jpg" height="230">
           <div class="textservice">
               <p>A ferramenta permite configurar os anúncios para que somente pessoas <br> interessadas em determinados produtos ou serviços sejam impactadas.</p>
                <a href=""> <button>Ads</button></a>
@@ -109,7 +173,7 @@
 <section class="container-about">
  
 <div class="about">
-    <img style="border-radius: 70px 0px 70px 0px;" src="/imagens/eugene.jpg" height="450"  alt="">
+    <img style="border-radius: 70px 0px 70px 0px;" src="imagens/eugene.jpg" height="450"  alt="">
     <div class="about-right">
         <div class="title-header">
             <h1> Day after Day</h1>
@@ -188,8 +252,6 @@
                        <option value="emkt"> 📩 Email Marketing</option>
                    </select>
                  
-
-               </div>
            </fieldset>
 
            <fieldset>
@@ -207,6 +269,15 @@
 
 </body>
 
-<script src="/Js/menu.js"></script>
+<script>
+
+function openModal() {
+    document.getElementById('bg-modal').style.left = "0";
+}
+function closeModal() {
+    document.getElementById('bg-modal').style.left = "-100%";
+}
+
+</script>
 
 </html>
