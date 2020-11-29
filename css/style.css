@@ -20,6 +20,9 @@ html, body {
   align-items: center;
   margin-left: -5%;
   width: 100%; }
+  @media only screen and (max-width: 600px) {
+    .headerUp {
+      width: 50%; } }
   .headerUp ul {
     display: inline-flex;
     margin-left: 25%;
@@ -76,18 +79,21 @@ p {
   justify-content: center;
   align-items: center; }
 
-.headerDown {
-  width: 100%; }
-
 .banner-info {
   position: absolute;
   top: 30%;
   left: 7%; }
+  @media only screen and (max-width: 600px) {
+    .banner-info {
+      top: 15%; } }
   .banner-info h1 {
     font-size: 4rem;
     color: azure;
     font-family: Rubik;
     font-weight: 300; }
+    @media only screen and (max-width: 600px) {
+      .banner-info h1 {
+        font-size: 2rem; } }
   .banner-info #orcamento {
     background: #c60aff linear-gradient(to right, #c60aff, #ff7b00);
     border-radius: 25px 25px 0px 25px;
@@ -112,9 +118,9 @@ p {
   transition: 150ms; }
   .bg-modal .modal {
     padding: 10px;
-    margin: 50px auto 0 auto;
+    margin: 40px auto 0 auto;
     width: 50%;
-    height: 30rem;
+    height: 32rem;
     background: #fff;
     border-radius: 15px; }
     @media only screen and (max-width: 600px) {
@@ -204,7 +210,7 @@ p {
     height: 50px;
     margin-top: 5%; }
     .tasks-modal .btn button {
-      width: 26rem;
+      width: 35rem;
       height: 45px;
       border-radius: 25px;
       border: none;
@@ -213,6 +219,9 @@ p {
       font-family: Commissioner;
       font-size: 19px;
       color: #fff; }
+      @media only screen and (max-width: 600px) {
+        .tasks-modal .btn button {
+          width: 20rem; } }
     .tasks-modal .btn button:hover {
       border: #ffbe0a 1px solid;
       color: orange;
@@ -233,6 +242,12 @@ input[type="checkbox"] {
 .full-banner {
   width: 100%;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 600px) {
+    .full-banner {
+      height: 55vh;
+      background: #6303bd; }
+      .full-banner img {
+        display: none; } }
   .full-banner img {
     width: 100%; }
 
@@ -287,10 +302,10 @@ input[type="checkbox"] {
     width: 100%; }
 
 .card-servico {
-  box-shadow: 0 0.4rem 1rem #d6d6d6;
+  box-shadow: 0 0.4rem 1rem #c5c5c5;
   margin-top: 10%;
   padding: 18px;
-  width: 350px;
+  width: 340px;
   margin: 15px;
   background-color: white;
   border-radius: 15px;
@@ -377,10 +392,14 @@ input[type="checkbox"] {
   align-items: center;
   display: grid;
   padding: 10rem;
-  background-image: url("/imagens/4104300-01.svg");
+  background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-attachment: fixed;
   background-size: 100%;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 600px) {
+    .container-projetos {
+      background-size: 250%;
+      background-attachment: fixed; } }
   .container-projetos h1 {
     color: #f1f1f1; }
   .container-projetos .title-header {
@@ -397,7 +416,7 @@ input[type="checkbox"] {
     width: 100%; }
 
 .card-projetos {
-  background-image: url("/imagens/gradiente.jpg");
+  background-image: url("https://www.muralswallpaper.com/app/uploads/purple-bright-gradient-wallpaper-mural-Plain-820x532.jpg");
   background-repeat: no-repeat;
   background-size: 600px;
   width: 330px;
@@ -446,7 +465,7 @@ fieldset, #select-contato, textarea {
       width: 100%;
       height: 150vh; } }
   .container-contato button {
-    width: 26rem;
+    width: 35rem;
     height: 45px;
     border-radius: 25px;
     border: none;
@@ -455,6 +474,9 @@ fieldset, #select-contato, textarea {
     font-family: Commissioner;
     font-size: 19px;
     color: #fff; }
+    @media only screen and (max-width: 600px) {
+      .container-contato button {
+        width: 20rem; } }
   .container-contato button:hover {
     border: #ffbe0a 1px solid;
     color: orange;
@@ -471,8 +493,8 @@ fieldset, #select-contato, textarea {
   flex-wrap: wrap; }
   @media only screen and (max-width: 600px) {
     .card-contato {
-      margin-left: 3rem;
-      width: 75%; } }
+      margin-left: 1rem;
+      width: 76%; } }
 
 .container-map {
   float: right;
@@ -510,7 +532,7 @@ textarea {
   font-size: 1.2rem;
   position: static;
   background-color: #ffffff;
-  font-family: font-paragraph;
+  font-family: Commissioner;
   max-height: 300px;
   max-width: 350px;
   height: 100px;
@@ -519,6 +541,6 @@ textarea {
   border-radius: 5px; }
   @media only screen and (max-width: 600px) {
     textarea {
-      max-width: 340px; } }
+      max-width: 250px; } }
 
 /*# sourceMappingURL=style.css.map */

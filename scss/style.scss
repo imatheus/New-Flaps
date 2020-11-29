@@ -12,17 +12,18 @@
   align-items: center;
 }
 
-.headerDown{
-  width: 100%;
-
-}
-
 .banner-info{
+  @media only screen  and (max-width: 600px){
+    top: 15%;
+  }
   position: absolute;
    top: 30%;
    left: 7%;
 
    h1{
+    @media only screen  and (max-width: 600px){
+      font-size: 2rem;
+    }
      font-size: 4rem;
      color: azure;
      font-family: $font-title;
@@ -42,14 +43,13 @@ display: block;
 transition: 150ms;
 
 .modal{
-
   @media only screen  and (max-width: 600px){
     width: 90%;
   }
 padding: 10px;
-margin: 50px auto 0 auto;
+margin: 40px auto 0 auto;
 width: 50%;
-height: 30rem;
+height: 32rem;
 background:#fff;
 border-radius:15px;
 
@@ -183,6 +183,13 @@ border-radius:15px;
    }
 
 .full-banner{
+  @media only screen  and (max-width: 600px){
+    height: 55vh;
+    background: $purple;
+ img{
+   display: none;
+ }
+  }
 width:100%;
 flex-wrap: wrap;
 
@@ -226,7 +233,7 @@ align-items: center;
   box-shadow: $box-shadow-gray;
   margin-top: 10%;
   padding: 18px;
-  width: 350px;
+  width: 340px;
   margin: 15px;
   background-color: white;
   border-radius: 15px;
@@ -290,13 +297,17 @@ margin-top: 5%;
 }
 
 .container-projetos {
+  @media only screen  and (max-width: 600px){
+ background-size:250%;
+ background-attachment: fixed;
+  }
   text-align: center;
   justify-content: center;
   align-items: center;
   display: grid;
   padding: 10rem;
-  background-image: url("/imagens/4104300-01.svg");
-  background-attachment: fixed;
+  background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-attachment:fixed;
   background-size: 100%;
   background-repeat:no-repeat;
 
@@ -312,7 +323,7 @@ margin-top: 5%;
 
 
 .card-projetos {
-  background-image: url("/imagens/gradiente.jpg");
+  background-image: url("https://www.muralswallpaper.com/app/uploads/purple-bright-gradient-wallpaper-mural-Plain-820x532.jpg");
   background-repeat: no-repeat;
   background-size: 600px;
   width: 330px;
@@ -374,8 +385,9 @@ fieldset, #select-contato, textarea{
 
 .card-contato{
   @media only screen  and (max-width: 600px){
-    margin-left: 3rem;
-    width: 75%;
+    margin-left: 1rem;
+    width: 76%;
+
   }
 
   margin-left:6rem;
@@ -427,13 +439,13 @@ font-size: 17px;}
 
 textarea {
   @media only screen  and (max-width: 600px){
-    max-width:340px;
+    max-width:250px;
   }
 
   font-size: 1.2rem;;
   position: static;
   background-color: #ffffff;
-  font-family: font-paragraph;
+  font-family: $font;
   max-height: 300px;
   max-width:350px;
   height: 100px;
