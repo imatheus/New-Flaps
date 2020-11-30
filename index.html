@@ -11,10 +11,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
     <link rel="manifest" href="icons/site.webmanifest">
-  
+    <script src="//code.jivosite.com/widget/HMnUt2mdMp" async></script>
+    <link rel="icon" href="/imagens/icon.png">
+
     
 </head>
 <body>
+    <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511977269286"><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111728.svg"
+        style="height:56px; position:fixed; bottom: 90px; right: 25px; z-index:99999;" data-selector="img"  ></a>
+
     <div class="bg-modal"  id="bg-modal">
         <div class="modal">
             <span onclick="closeModal()" class="close"><i class="fas fa-times-circle"></i></span>
@@ -25,7 +30,7 @@
                     </div> <br><p></p>
 
 
-                    <form class="form" action="orcamento.php" method="post">
+                    <form class="form" action="php/orcamento.php" method="post">
 
                     
 
@@ -89,39 +94,61 @@
         
         </div>
     </div>
-    
+   
 
     <header class="headerDow">
+        
+
         <div class="headerUp">
         <a href="#"> <img src="imagens/logo - branca.png" alt=""></a>
-
-        <ul>
-           <a href="#"> <li>Home</li></a>
-            <a href="#"> <li>Soluções</li></a>
-           <a href="#"> <li>Sobre</li></a>
-           <a href="#"> <li>Contato</li></a>
-          
-        </ul>
 
         </div>
 
 
         <div class="full-banner">
+
+            <div class="container">
+
+                <div class="hamburguer">
+                    <div class="line" id="line1"></div>
+                    <div class="line" id="line2"></div>
+                    <div class="line" id="line3"></div>
+                </div>
+        
+               
+            </div>
             <img src="imagens/19199731 [Convertido]-01.svg" alt="">
         <div class="banner-info">
             <h1>Abra novas abas <br> para o seu <br> negócio hoje</h1><br>
-          <a href="#"> <button onclick="openModal()" id="orcamento">Faça um orçamento</button></a>
+          <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511949802134"> <button onclick="openMoal()" id="orcamento">Faça um orçamento</button></a>
         </div>
         </div>
-
+       
     </div>
     
 
     <div id="setaUp">
         <img src="https://www.imagemeventos.com/public/img/seta.png" height=60" alt="">
-    </div>
-   
+    </div>   
+
     </header>
+ <side class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <a href="#"> <li>Home</li></a>
+                     <a href="#"> <li>Soluções</li></a>
+                    <a href="#"> <li>Sobre</li></a>
+                    <a href="#"> <li>Contato</li></a>
+                 </ul>
+            </nav>
+            <div class="social-media">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+    
+        </side>
+
 
      
   <section class="container-servicos">
@@ -156,7 +183,7 @@
           <img src="imagens/ads/baixados.jpg" height="230">
           <div class="textservice">
               <p>A ferramenta permite configurar os anúncios para que somente pessoas <br> interessadas em determinados produtos ou serviços sejam impactadas.</p>
-               <a href=""> <button>Ads</button></a>
+               <a href=""> <button>Gestão de Tráfego</button></a>
           </div>
        
       </div>
@@ -227,7 +254,7 @@
             <div class="card-info">
                 
                 <h3>Desenvolvimento Web</h3>
-                <h5>Desenvolvemos todo o site The Fries seguindo o PSD entregue</h5>
+                <h5>Desenvolvemos todo o site The Fries seguindo o PSD entregue.</h5>
             </div>
         </div>  
 </section>
@@ -237,7 +264,7 @@
     <div class="card-contato">
         <div id="area-input">
             <h2>Fale Conosco</h2>
-            <form class="form" action="contato.php" method="post">
+            <form class="form" action="php/contato.php" method="post">
 
            
            <fieldset>
@@ -247,7 +274,7 @@
                <input name="email" placeholder="E-mail" type="email" size="45" >
            </fieldset> 
            <fieldset>
-               <input name="telefone" type="telefone" placeholder="Telefone" size="4">
+               <input name="telefone"  placeholder="Telefone" size="4">
            </fieldset>
            <fieldset>
                <input name="empresa" placeholder="Empresa" type="text" size="45" >
@@ -284,24 +311,11 @@
 
 <script>
 
+let hamburguer = document.querySelector(".hamburguer")
 
-function openModal() {
-    document.getElementById('bg-modal').style.left = "0";
-}
-function closeModal() {
-    document.getElementById('bg-modal').style.left = "-100%";
-}
-
-var inputElement = document.querySelector(' textarea');
-
-
-var  btnElement = document.querySelector("button");
-
-btnElement.onclick = function(){
-  var text = inputElement.value;
-  alert(text);
-}
-
+hamburguer.addEventListener("click", function(){
+ document.querySelector(".sidebar").classList.toggle("show-menu")
+});
 
 </script>
 
