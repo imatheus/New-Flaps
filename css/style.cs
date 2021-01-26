@@ -445,6 +445,9 @@ input[type="checkbox"] {
     width: 90%;
     height: 300px;
     border-radius: 65px; }
+    @media only screen and (max-width: 600px) {
+      .about .about-right {
+        display: none; } }
     .about .about-right p, .about .about-right h1 {
       text-align: left;
       color: #ffffff;
@@ -488,7 +491,6 @@ input[type="checkbox"] {
 .card-projetos {
   background-repeat: no-repeat;
   background-size: 600px;
-  border-radius: 5px;
   width: 330px;
   margin: 5px; }
 
@@ -541,11 +543,66 @@ fieldset, #select-contato, textarea {
   padding: 10px;
   width: 90%; }
 
+.container-contato {
+  background: #4f0779; }
+  @media only screen and (max-width: 600px) {
+    .container-contato {
+      width: 100%;
+      height: 100%; } }
+
+.card-contato {
+  background-color: azure;
+  width: 49%;
+  height: 40%;
+  float: right; }
+
+.container-img-form img {
+  float: left; }
+  @media only screen and (max-width: 600px) {
+    .container-img-form img {
+      width: 100%; } }
+
+#area-input input {
+  width: 100%;
+  height: 1.2rem;
+  padding: 15px;
+  background-color: #dbdada;
+  margin: 1px;
+  border-radius: 5px;
+  border: #e2e2e2 1px solid;
+  font-family: Commissioner;
+  color: #6303bd;
+  font-size: 17px; }
+
+#select-contato {
+  font-size: 20px;
+  font-family: Commissioner;
+  background: #7204a5 linear-gradient(to right, #6d03d1, #c804e2);
+  color: white;
+  padding: 5px;
+  width: 108%;
+  height: 48px;
+  margin: 1px;
+  border-radius: 5px;
+  cursor: pointer; }
+
 footer {
-  padding: 10px;
-  color: #fff;
+  margin-top: 300px;
   background-color: #505050; }
-  footer p {
-    color: #fff; }
+
+textarea {
+  font-size: 1.2rem;
+  position: static;
+  background-color: #dbdada;
+  font-family: Commissioner;
+  max-height: 200px;
+  max-width: 410px;
+  width: 980px;
+  height: 55px;
+  padding: 10px;
+  border-radius: 5px; }
+  @media only screen and (max-width: 600px) {
+    textarea {
+      max-width: 250px; } }
 
 /*# sourceMappingURL=style.css.map */

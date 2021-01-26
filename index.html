@@ -17,8 +17,6 @@
     
 </head>
 <body>
-    <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511977269286"><img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111728.svg"
-        style="height:56px; position:fixed; bottom: 90px; right: 25px; z-index:99999;" data-selector="img"  ></a>
 
     <div class="bg-modal"  id="bg-modal">
         <div class="modal">
@@ -120,7 +118,7 @@
             <img src="imagens/19199731 [Convertido]-01.svg" alt="">
         <div class="banner-info">
             <h1>Abra novas abas <br> para o seu <br> negócio hoje</h1><br>
-          <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511949802134"> <button onclick="openMoal()" id="orcamento">Faça um orçamento</button></a>
+          <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511977269286"> <button onclick="openMoal()" id="orcamento">Faça um orçamento</button></a>
         </div>
         </div>
        
@@ -208,16 +206,16 @@
 <section class="container-about">
  
 <div class="about">
-    <img style="border-radius: 70px 0px 70px 0px;" src="imagens/eugene.jpg" height="450"  alt="">
     <div class="about-right">
         <div class="title-header">
             <h1> Day after Day</h1>
                 </div>
         <p>
-            Somos uma Agência Digital Totalmente voltada  para <br>vasto mercado digital. <br>
-            Vamos além da criação de um site, estamos focados em gerar grandes resultados para nossos clientes 💜</p>  
+            Somos uma Agência Digital totalmente voltada  para <br>vasto mercado digital. <br>
+            Vamos além da criação de um site, estamos focados em gerar <br>grandes resultados para nossos clientes!</p>  
             
             <button>Veja Mais </button>
+            <img src="\imagens\client_2-01.png" height="450">
     </div>
 
 
@@ -260,63 +258,8 @@
 </section>
 
 
-<section class="container-contato">
-    <div class="card-contato">
-        <div id="area-input">
-            <h2>Fale Conosco</h2>
-            <form class="form" action="php/contato.php" method="post">
-
-           
-           <fieldset>
-               <input name="nome" placeholder="Nome Completo" type="text" size="45" >
-           </fieldset> 
-           <fieldset>
-               <input name="email" placeholder="E-mail" type="email" size="45" >
-           </fieldset> 
-           <fieldset>
-               <input name="telefone"  placeholder="Telefone" size="4">
-           </fieldset>
-           <fieldset>
-               <input name="empresa" placeholder="Empresa" type="text" size="45" >
-           </fieldset>
-           
-           <fieldset>
-              
-                   <select id="select-contato" name="assunto">
-                    <option >💻 Criação de Sites</option>
-                    <option >📢 Gestão de Tráfego</option>
-                    <option >📧 E-mail Marketing</option>
-                    <option >📱 Mídias Sociais</option>
-                    <option >🛒 E-Commerces</option>
-                    <option >Outros..</option>
-                   </select>
-                 
-           </fieldset>
-
-           <fieldset>
-               <textarea id="" placeholder="Mensagem" name="msg" id="msg" cols="150"rows="5"></textarea>
-           </fieldset>
-           <button  onmouseover="passarMouse()"class="button"  type="submit" name="button" style="width:100%;">Enviar</button>
-        </form>
-       </div>
-   
-</section>
-
-<section class="container-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.7236443052407!2d-46.73153788447393!3d-23.650066070760303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51bf4aaeb8b7%3A0xf9840c9abb88ca35!2sCentro%20Empresarial%20de%20S%C3%A3o%20Paulo%20-%20CENESP!5e0!3m2!1spt-BR!2sbr!4v1605396156531!5m2!1spt-BR!2sbr" width="100%" height="750" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</section>
-
+<footer>
+   <p>© Copyright 2020 - 2021   |   Todos os direitos reservados</p>
+</footer>
 </body>
-
-
-<script>
-
-let hamburguer = document.querySelector(".hamburguer")
-
-hamburguer.addEventListener("click", function(){
- document.querySelector(".sidebar").classList.toggle("show-menu")
-});
-
-</script>
-
 </html>
