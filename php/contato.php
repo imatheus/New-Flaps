@@ -11,7 +11,7 @@ $telefone = utf8_decode($_POST['telefone']);
 $empresa = utf8_decode($_POST['empresa']);
 $msg = utf8_decode($_POST['msg']);
 
-$alerta  = header('Location: index.html');;
+$redirect  = header('Location: ../index.html');;
 
 $corpo  = "
 Assunto: ".$assunto."

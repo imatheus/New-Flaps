@@ -29,10 +29,10 @@
     position: absolute;
     margin: 10px;
     display: inline-flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-left: -5%;
-    width: 100%;
+    margin-left: 5%;
+    width: 10%;
   
     ul{
       display: inline-flex;
@@ -113,9 +113,9 @@
       width:150px;
       margin-top:4%;
       height: 35px;
-      border-radius: 20px 2px 20px 2px;
+      border-radius: 20px;
       border:none;
-      background: $purple linear-gradient(to right, #e730ff8a, #a812ffd2);
+      background:#c60aff linear-gradient(to right, #c60aff, #9b04a0);
       cursor: pointer;
       font-family:$font;
       font-size: 19px;
@@ -201,7 +201,7 @@
   }
   h5{
     font-family:$font;
-    color: #b4b4b4;
+    color: #ececec;
     font-size: 15px;
     margin: 5px;
   }
@@ -209,7 +209,11 @@
   p{
     font-family:$font;
     color: #464545;
+    font-size: 19px;
+    margin: 5px;
+  }
+  samp{
+    color: #ffffff;
     font-size: 18px;
     margin: 5px;
   }
-  

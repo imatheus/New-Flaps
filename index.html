@@ -11,116 +11,62 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
     <link rel="manifest" href="icons/site.webmanifest">
-  
+    <script src="//code.jivosite.com/widget/HMnUt2mdMp" async></script>
+    <link rel="icon" href="/imagens/icon.png">
+
     
 </head>
 <body>
-    <div class="bg-modal"  id="bg-modal">
-        <div class="modal">
-            <span onclick="closeModal()" class="close"><i class="fas fa-times-circle"></i></span>
 
-                <div class="tasks-modal">
-                    <div class="title-modal">
-                        <h2>Olá!</h2>
-                    </div> <br><p></p>
-
-
-                    <form class="form" action="php/orcamento.php" method="post">
-
-                    
-
-                    <div class="name-email">
-                        <fieldset>
-                            <input name="nome" placeholder="Nome Completo" type="text" size="45" >
-                        </fieldset> 
-                        <fieldset>
-                            <input name="email" placeholder="Seu E-mail" type="email" size="45" >
-                        </fieldset> 
-
-                    </div> <br>
-
-                    <div class="services">
-                        
-                        <h3>Qual serviço você procura?</h3>
-                        <fieldset>
-                            <select id="select-contato" name="services">
-                                <option value="web">💻 Desenvolvimento Web</option>
-                                <option value="social-midia">🚀 Mídias Sociais</option>
-                                <option value="Ads">📊 Tráfego</option>
-                                <option value="emkt"> 📩 Email Marketing</option>
-                                
-                            </select>
-                          
-                    </fieldset>
-
-                    </div> <br>
-
-                    <div class="design">
-                        <h3>Você já possui um site?</h3>
-                        <fieldset name="site">
-                            
-                                <input name="tem" type="checkbox"><h4>Já possuo</h4></input>
-                        
-                                <input name="naotem" type="checkbox"><h4>Não possuo</h4></input>
-                      
-                            
-                        </fieldset>
-
-                    </div> <br>
-
-                    
-                    <div class="prazo">
-                        <h3>Seu prazo é de:</h3>
-                        <fieldset>
-                            <select id="select-contato" name="prazo">
-                                <option> 1-4 Semanas</option>
-                                <option>2-6 Meses</option>
-                                <option>6 Meses</option>
-                                <option > 1 Ano</option>
-                            </select>
-                        </fieldset>
-
-                    </div>
-                    <div class="btn">
-                      <button onmouseover="passarMouse()"class="button"  type="submit" name="button">Enviar</button>
-                    </div>
-                </form>
-                </div>
+    <header>
+      
         
-        </div>
-    </div>
-    
+        <input id="menu-hamburger" type="checkbox"></input>
+        <label for="menu-hamburger">
+        <side class="sidebar">
+          
+            <span class="hamburguer"> </span>
+        
+        </side>
 
-    <header class="headerDow">
+        <ul class="menu-ul">
+            <a href="https://newflaps.com.br"><li>Home</li></a>
+            <a href="https://newflaps.com.br/pages/sobre"><li>Sobre</li></a>
+            <a href="https://newflaps.com.br/pages/contato"><li>Contato</li></a>
+
+            <div class="sm">
+                <a href="https://facebook.com/newflaps" target="_blacnk"><i class="fab fa-facebook"></i></a>
+                <a  href="https://instagram.com/newflaps" target="_blacnk"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/softcy"  target="_blacnk"><i class="fab fa-linkedin" target="_blacnk"></i></a>
+            </div>
+
+        </ul>
+    
+    
+    </label>
+
         <div class="headerUp">
         <a href="#"> <img src="imagens/logo - branca.png" alt=""></a>
-
-        <ul>
-           <a href="#"> <li>Home</li></a>
-            <a href="#"> <li>Soluções</li></a>
-           <a href="#"> <li>Sobre</li></a>
-           <a href="#"> <li>Contato</li></a>
-          
-        </ul>
 
         </div>
 
 
         <div class="full-banner">
+
             <img src="imagens/19199731 [Convertido]-01.svg" alt="">
         <div class="banner-info">
             <h1>Abra novas abas <br> para o seu <br> negócio hoje</h1><br>
-          <a href="#"> <button onclick="openModal()" id="orcamento">Faça um orçamento</button></a>
+          <a href="https://api.whatsapp.com/send?l=pt&amp;phone=5511977269286"> <button onclick="openMoal()" id="orcamento">Faça um orçamento</button></a>
         </div>
         </div>
-
+       
     </div>
     
 
     <div id="setaUp">
         <img src="https://www.imagemeventos.com/public/img/seta.png" height=60" alt="">
-    </div>
-   
+    </div>   
+
     </header>
 
      
@@ -156,7 +102,7 @@
           <img src="imagens/ads/baixados.jpg" height="230">
           <div class="textservice">
               <p>A ferramenta permite configurar os anúncios para que somente pessoas <br> interessadas em determinados produtos ou serviços sejam impactadas.</p>
-               <a href=""> <button>Ads</button></a>
+               <a href=""> <button>Gestão de Tráfego</button></a>
           </div>
        
       </div>
@@ -181,16 +127,16 @@
 <section class="container-about">
  
 <div class="about">
-    <img style="border-radius: 70px 0px 70px 0px;" src="imagens/eugene.jpg" height="450"  alt="">
     <div class="about-right">
         <div class="title-header">
             <h1> Day after Day</h1>
                 </div>
         <p>
-            Somos uma Agência Digital Totalmente voltada  para <br>vasto mercado digital. <br>
-            Vamos além da criação de um site, estamos focados em gerar grandes resultados para nossos clientes 💜</p>  
+            Somos uma Agência Digital totalmente voltada  para <br>vasto mercado digital. <br>
+            Vamos além da criação de um site, estamos focados em gerar <br>grandes resultados para nossos clientes!</p>  
             
             <button>Veja Mais </button>
+            <img src="\imagens\client_2-01.png" height="450">
     </div>
 
 
@@ -233,76 +179,15 @@
 </section>
 
 
-<section class="container-contato">
-    <div class="card-contato">
-        <div id="area-input">
-            <h2>Fale Conosco</h2>
-            <form class="form" action="php/contato.php" method="post">
+<footer>
+    <div>
+        <img src="/imagens/12.png" height="45">
+    </div>
+   <div>
+    <p>© Copyright   2020-2021  Agência New Flap's</p>
 
-           
-           <fieldset>
-               <input name="nome" placeholder="Nome Completo" type="text" size="45" >
-           </fieldset> 
-           <fieldset>
-               <input name="email" placeholder="E-mail" type="email" size="45" >
-           </fieldset> 
-           <fieldset>
-               <input name="telefone" type="telefone" placeholder="Telefone" size="4">
-           </fieldset>
-           <fieldset>
-               <input name="empresa" placeholder="Empresa" type="text" size="45" >
-           </fieldset>
-           
-           <fieldset>
-              
-                   <select id="select-contato" name="assunto">
-                    <option >💻 Criação de Sites</option>
-                    <option >📢 Gestão de Tráfego</option>
-                    <option >📧 E-mail Marketing</option>
-                    <option >📱 Mídias Sociais</option>
-                    <option >🛒 E-Commerces</option>
-                    <option >Outros..</option>
-                   </select>
-                 
-           </fieldset>
+</div>
 
-           <fieldset>
-               <textarea id="" placeholder="Mensagem" name="msg" id="msg" cols="150"rows="5"></textarea>
-           </fieldset>
-           <button  onmouseover="passarMouse()"class="button"  type="submit" name="button" style="width:100%;">Enviar</button>
-        </form>
-       </div>
-   
-</section>
-
-<section class="container-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.7236443052407!2d-46.73153788447393!3d-23.650066070760303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51bf4aaeb8b7%3A0xf9840c9abb88ca35!2sCentro%20Empresarial%20de%20S%C3%A3o%20Paulo%20-%20CENESP!5e0!3m2!1spt-BR!2sbr!4v1605396156531!5m2!1spt-BR!2sbr" width="100%" height="750" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</section>
-
+</footer>
 </body>
-
-
-<script>
-
-
-function openModal() {
-    document.getElementById('bg-modal').style.left = "0";
-}
-function closeModal() {
-    document.getElementById('bg-modal').style.left = "-100%";
-}
-
-var inputElement = document.querySelector(' textarea');
-
-
-var  btnElement = document.querySelector("button");
-
-btnElement.onclick = function(){
-  var text = inputElement.value;
-  alert(text);
-}
-
-
-</script>
-
 </html>

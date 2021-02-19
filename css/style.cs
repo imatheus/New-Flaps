@@ -68,18 +68,13 @@ h4 {
 
 h5 {
   font-family: Commissioner;
-  color: #ececec;
+  color: #b4b4b4;
   font-size: 15px;
   margin: 5px; }
 
 p {
   font-family: Commissioner;
   color: #464545;
-  font-size: 19px;
-  margin: 5px; }
-
-samp {
-  color: #ffffff;
   font-size: 18px;
   margin: 5px; }
 
@@ -121,98 +116,185 @@ samp {
   .banner-info #orcamento:hover {
     background: #c60aff; }
 
-.sidebar {
-  height: 55px;
-  width: 60px;
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 2, 2, 0.897);
   position: fixed;
-  top: 10px;
-  right: 25px;
-  cursor: pointer; }
-  @media screen and (max-width: 600px) {
-    .sidebar {
-      left: -7pc; } }
-  .sidebar .hamburguer {
-    position: relative;
-    display: block;
-    background-color: white;
-    width: 40px;
-    height: 4.5px;
-    border-radius: 10px;
-    top: 24px;
-    left: 10px;
-    transition: 0.5s ease-in-out;
-    box-shadow: #a544ff 2px 2px 10px; }
-    @media screen and (max-width: 600px) {
-      .sidebar .hamburguer {
-        left: 35pc; } }
-  .sidebar .hamburguer::before,
-  .sidebar .hamburguer::after {
-    background-color: white;
-    content: '';
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    transition: 0.5s ease-in-out;
-    box-shadow: #a34cf5 2px 2px 10px; }
-  .sidebar .hamburguer:before {
-    top: -12px; }
-  .sidebar .hamburguer::after {
-    bottom: -12px; }
+  z-index: 2;
+  left: -100%;
+  display: block;
+  transition: 150ms; }
+  .bg-modal .modal {
+    padding: 10px;
+    margin: 40px auto 0 auto;
+    width: 50%;
+    height: 32rem;
+    background: #fff;
+    border-radius: 15px; }
+    @media only screen and (max-width: 600px) {
+      .bg-modal .modal {
+        width: 90%; } }
+    .bg-modal .modal .close {
+      float: right;
+      font-size: 26px;
+      margin: 10px;
+      color: #6303bd;
+      transition: 350ms;
+      cursor: pointer; }
 
-.menu-ul {
-  position: fixed;
-  top: 20%;
-  left: 70%;
-  width: 650px;
-  opacity: 0; }
-  @media screen and (max-width: 600px) {
-    .menu-ul {
-      left: 55%; } }
-  .menu-ul li {
-    padding: 20px;
-    font-size: 28px;
-    font-family: Rubik;
-    color: #c5c5c5; }
-  .menu-ul .sm {
-    bottom: -80%;
-    position: absolute;
-    margin-top: 30%;
-    font-size: 20px;
-    display: inline;
-    margin: 5px;
-    justify-content: space-evenly; }
-    .menu-ul .sm i {
-      background-color: #7c09be;
-      justify-content: space-around;
-      border-radius: 26px;
+.close:hover {
+  color: #9000b4;
+  transition: 350ms; }
+
+.title-modal h3 {
+  color: #6303bd; }
+
+.tasks-modal {
+  height: 90%;
+  width: 100%; }
+  .tasks-modal .services {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    border-radius: 5px;
+    background: #dddddd; }
+    .tasks-modal .services h3 {
+      color: #6303bd; }
+    .tasks-modal .services fieldset {
+      width: 50%; }
+  .tasks-modal .design {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    border-radius: 5px;
+    background: #dddddd; }
+    .tasks-modal .design h3 {
+      color: #6303bd; }
+    .tasks-modal .design fieldset {
+      width: 58%;
+      display: flex;
+      border-radius: 5px;
+      border: 1px #6303bd solid; }
+    .tasks-modal .design input {
+      border: 1px #6303bd solid;
+      height: 25px;
+      width: 16%; }
+  .tasks-modal .prazo {
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #dddddd; }
+    .tasks-modal .prazo h3 {
+      color: #6303bd; }
+    .tasks-modal .prazo fieldset {
+      width: 59%;
+      justify-content: left;
+      display: flex; }
+  .tasks-modal .name-email {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px; }
+    .tasks-modal .name-email input {
+      border-radius: 7px;
+      border: 1px #6303bd solid;
+      width: 85%;
+      font-size: 19px;
       padding: 10px;
-      color: white; }
+      height: 30px;
+      justify-content: left;
+      display: flex; }
+  .tasks-modal .btn {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    margin-top: 5%; }
+    .tasks-modal .btn button {
+      width: 35rem;
+      height: 45px;
+      border-radius: 25px;
+      border: none;
+      background: #ffbe0a linear-gradient(to right, #ffbe0a, #ff7b00);
+      cursor: pointer;
+      font-family: Commissioner;
+      font-size: 19px;
+      color: #fff; }
+      @media only screen and (max-width: 600px) {
+        .tasks-modal .btn button {
+          width: 20rem; } }
+    .tasks-modal .btn button:hover {
+      border: #ffbe0a 1px solid;
+      color: orange;
+      transition: 0.5s;
+      background: transparent; }
 
-input {
-  display: none; }
+input[type="text"] {
+  height: 20px;
+  margin: -2px;
+  margin-left: 2px;
+  border-radius: 2px;
+  border: none; }
 
-input:checked ~ label .menu-ul {
-  opacity: 1;
-  transition: 1s; }
+input[type="checkbox"] {
+  height: 20px;
+  width: 30px; }
 
-input:checked ~ label .sidebar {
-  box-shadow: 55pc 10pc 0 100vw #fff;
-  border-radius: 0px;
-  transition: 0.5s;
-  position: fixed; }
+.hamburguer {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  z-index: 100;
+  right: 2rem;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer; }
+  .hamburguer .line {
+    border-radius: 10px;
+    width: 100%;
+    height: 6px;
+    background: #fff;
+    box-shadow: 0 0.1rem 1rem #6303bd; }
 
-input:checked ~ label .hamburguer {
-  transform: rotate(45deg); }
-
-input:checked ~ label .hamburguer::before {
-  transform: rotate(90deg);
-  top: 0; }
-
-input:checked ~ label .hamburguer::after {
-  transform: rotate(90deg);
-  bottom: 0; }
+.sidebar {
+  width: 20rem;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: -20rem; }
+  .sidebar .show-menu {
+    right: 0; }
+  .sidebar .menu {
+    position: absolute;
+    justify-content: center;
+    top: 20%;
+    transform: translateY(50%) translateX(50%); }
+    .sidebar .menu a li {
+      margin-bottom: 8px;
+      color: #6303bd;
+      font-size: 1.5rem;
+      text-align: center;
+      font-family: Commissioner; }
+  .sidebar .social-media {
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 10rem;
+    width: 100%; }
 
 .full-banner {
   width: 100%;
@@ -363,6 +445,9 @@ input:checked ~ label .hamburguer::after {
     width: 90%;
     height: 300px;
     border-radius: 65px; }
+    @media only screen and (max-width: 600px) {
+      .about .about-right {
+        display: none; } }
     .about .about-right p, .about .about-right h1 {
       text-align: left;
       color: #ffffff;
@@ -406,7 +491,6 @@ input:checked ~ label .hamburguer::after {
 .card-projetos {
   background-repeat: no-repeat;
   background-size: 600px;
-  border-radius: 5px;
   width: 330px;
   margin: 5px; }
 
@@ -428,6 +512,10 @@ input:checked ~ label .hamburguer::after {
   background-size: 700px;
   background-position: center; }
 
+.card-projetos:hover {
+  opacity: 0.9;
+  transition: 0.5s; }
+
 .card-info {
   visibility: hidden;
   margin-top: 70%;
@@ -436,13 +524,15 @@ input:checked ~ label .hamburguer::after {
   cursor: pointer;
   bottom: 0;
   opacity: 0;
-  transition: all 0.2s;
+  transition: all 0.3s;
   text-align: center; }
 
 .card-projetos:hover .card-info {
   visibility: visible;
   opacity: 1;
-  margin-top: 60%; }
+  margin-top: 60%;
+  transition: all 0.5s;
+  text-align: center; }
 
 .card-info h3, p {
   text-align: center;
@@ -453,16 +543,66 @@ fieldset, #select-contato, textarea {
   padding: 10px;
   width: 90%; }
 
+.container-contato {
+  background: #4f0779; }
+  @media only screen and (max-width: 600px) {
+    .container-contato {
+      width: 100%;
+      height: 100%; } }
+
+.card-contato {
+  background-color: azure;
+  width: 49%;
+  height: 40%;
+  float: right; }
+
+.container-img-form img {
+  float: left; }
+  @media only screen and (max-width: 600px) {
+    .container-img-form img {
+      width: 100%; } }
+
+#area-input input {
+  width: 100%;
+  height: 1.2rem;
+  padding: 15px;
+  background-color: #dbdada;
+  margin: 1px;
+  border-radius: 5px;
+  border: #e2e2e2 1px solid;
+  font-family: Commissioner;
+  color: #6303bd;
+  font-size: 17px; }
+
+#select-contato {
+  font-size: 20px;
+  font-family: Commissioner;
+  background: #7204a5 linear-gradient(to right, #6d03d1, #c804e2);
+  color: white;
+  padding: 5px;
+  width: 108%;
+  height: 48px;
+  margin: 1px;
+  border-radius: 5px;
+  cursor: pointer; }
+
 footer {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin-top: 300px;
+  background-color: #505050; }
+
+textarea {
+  font-size: 1.2rem;
+  position: static;
+  background-color: #dbdada;
+  font-family: Commissioner;
+  max-height: 200px;
+  max-width: 410px;
+  width: 980px;
+  height: 55px;
   padding: 10px;
-  height: 100px;
-  background-color: #353435; }
-  footer p {
-    color: #dddddd;
-    font-size: 16px;
-    letter-spacing: 2px; }
+  border-radius: 5px; }
+  @media only screen and (max-width: 600px) {
+    textarea {
+      max-width: 250px; } }
 
 /*# sourceMappingURL=style.css.map */
