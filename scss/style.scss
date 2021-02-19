@@ -33,214 +33,122 @@
      font-weight: 300;
    }
   @include button-gradient
-  }
-
-.bg-modal{
-width:100%;
-height: 100%;
-background: rgba(2, 2, 2, 0.897);
-position: fixed;
-z-index:2;
-left: -100%;
-display: block;
-transition: 150ms;
-
-.modal{
-  @media only screen  and (max-width: 600px){
-    width: 90%;
-  }
-padding: 10px;
-margin: 40px auto 0 auto;
-width: 50%;
-height: 32rem;
-background:#fff;
-border-radius:15px;
-
-
-.close{
-  float: right;
-  font-size: 26px;
-  margin: 10px;
-  color:$purple;
-  transition: 350ms;
-  cursor: pointer;
-}}};
-.close:hover{
-  color: #9000b4;
-  transition: 350ms;
-}
-.title-modal{
-
-  h3{
-    color: $purple;
-  }
-
-}
-  .tasks-modal{
-    height: 90%;
-    width: 100%;
-
-    .services{
-      align-items: center;
-      justify-content: left;
-      display: flex;
-      padding: 10px;
-      height: 50px;
-      border-radius: 5px;
-      background: rgb(221, 221, 221);
-
-      h3{
-        color: $purple;
-      }
-
-      fieldset{
-        width: 50%;
-      }
-    }
-
-    .design{
-      align-items: center;
-      justify-content: space-around;
-      display: flex;
-      padding: 10px;
-      height: 50px;
-      border-radius: 5px;
-      background: rgb(221, 221, 221);
-      h3{
-        color: $purple;
-      }
-      fieldset{
-        width: 58%;;
-        display: flex;
-        border-radius: 5px;
-        border: 1px #6303bd solid;
-      }
-      input{
-        border: 1px #6303bd solid;
-        height: 25px;
-        width: 16%;
-      }
-    }
-
-    .prazo{
-      align-items: center;
-      justify-content:left;
-      display: flex;
-      height: 50px;
-      padding: 10px;
-      border-radius: 5px;
-      background: rgb(221, 221, 221);
-      h3{
-        color: $purple;
-
-      }
-      fieldset{
-        width: 59%;
-        justify-content: left;
-        display: flex;
-      }
-    }
-
-    .name-email{
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      height: 50px;
-
-      input{
-        border-radius: 7px;
-        border: 1px #6303bd solid;
-        width: 85%;
-        font-size: 19px;
-        padding: 10px;
-        height: 30px;
-        justify-content: left;
-        display: flex;
-      }
-    }
-    .btn{
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      height: 50px;
-      margin-top: 5%;
-    @include button-orange-secondary()}
-
-  }
-
   
-
-
-  input[type="text"]{
-    height: 20px;
-    margin: -2px;
-    margin-left: 2px;;
-    border-radius: 2px;border: none;
-
   }
 
-   input[type="checkbox"]{
-     height: 20px;
-     width: 30px;
+  .sidebar{
+    @media screen  and (max-width: 600px){
+    left: -7pc;
+    }
+
+    height: 55px;
+    width: 60px;
+    position: fixed;
+    top: 10px;
+    right: 25px;;
+    cursor: pointer;
+
+    
+    .hamburguer{
+      @media screen  and (max-width: 600px){
+    left: 35pc;
+    }
+      position: relative;
+      display: block;
+      background-color: rgb(255, 255, 255);
+      width: 40px;
+      height: 4.5px;
+      border-radius: 10px;
+      top: 24px;
+      left: 10px;
+      transition: 0.5s ease-in-out;
+      box-shadow: #a544ff 2px 2px 10px;
+
+
+    }
+    .hamburguer::before, 
+    .hamburguer::after{
+      background-color: rgb(255, 255, 255);
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.5s ease-in-out;
+      box-shadow: #a34cf5 2px 2px 10px;
+    }
+    .hamburguer:before{
+      top: -12px;
+    }
+    .hamburguer::after{
+      bottom: -12px;
+ 
+    }
+  }
+  .menu-ul{
+    @media screen  and (max-width: 600px){
+      left: 55%;
+      }
+   position: fixed;
+   top: 20%;
+   left: 70%;
+   width: 650px;
+   opacity: 0;
+   li{
+     padding: 20px;
+     font-size: 28px;
+     font-family:$font-title;
+     color: $gray;
+   }
+   .sm{
+     bottom: -80%;
+     position: absolute;
+     margin-top: 30%;
+     font-size: 20px;
+     display: inline;
+     margin: 5px;
+     justify-content: space-evenly;
+     i{
+       background-color: rgb(124, 9, 190);
+       justify-content: space-around;
+       border-radius: 26px;
+       padding: 10px;
+       color: rgb(255, 255, 255);
+       
+     }
 
    }
-.hamburguer{
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  z-index: 100;
-  right: 2rem;
-  top: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  cursor: pointer;;
 
-.line{
-border-radius: 10px;
-width: 100%;
-height: 6px;
-background: #fff;
-box-shadow:$box-shadow-purple;
-}
-}
-
-.sidebar{
-  width: 20rem;
-  height: 100vh;
-  background: #fff;
-  position: fixed;
-  top: 0;
-  right: -20rem;
-
-  .show-menu{
-    right: 0;
+  }
+ 
+  input{
+    display: none;
+  }
+  input:checked ~ label .menu-ul{
+    opacity: 1;
+    transition: 1s;
   }
 
-  .menu{
-    position: absolute;
-   justify-content: center;
-   top: 20%;
-   transform: translateY(50%)translateX(50%);
+input:checked ~ label .sidebar{
 
-   a li{
-    margin-bottom: 8px;
-     color: $purple;
-     font-size: 1.5rem;
-     text-align: center;
-     font-family: $font;
-   }}
+box-shadow: 55pc 10pc 0 100vw #fff;
+border-radius:0px;
+transition: 0.5s;
+position: fixed;
+}
 
-   .social-media{
-     font-size: 30px;;
-     display: flex;
-     justify-content: space-evenly;
-     align-items: center;
-     padding: 10px;
-    position: absolute;
-    bottom: 10rem;
-    width: 100%;
-  }
+
+input:checked ~ label .hamburguer{
+  transform: rotate(45deg);
+}
+input:checked ~ label .hamburguer::before{
+  transform: rotate(90deg);
+  top:0
+}
+input:checked ~ label .hamburguer::after{
+  transform: rotate(90deg);
+  bottom:0
 }
 .full-banner{
   
@@ -431,11 +339,6 @@ margin-top: 5%;
 }
 
 
-.card-projetos:hover {
-  opacity: 0.9;
-  transition: 0.5s;
-}
-
 .card-info {
   visibility: hidden;
   margin-top: 70%;
@@ -444,7 +347,7 @@ margin-top: 5%;
   cursor: pointer;
   bottom: 0;
   opacity: 0;
-  transition: all 0.3s;
+  transition: all 0.2s;
   text-align: center;
 }
 
@@ -452,8 +355,6 @@ margin-top: 5%;
   visibility: visible;
   opacity: 1;
   margin-top: 60%;
-  transition: all 0.5s;
-  text-align: center;
   
 }
 .card-info h3, p{
@@ -469,11 +370,18 @@ fieldset, #select-contato, textarea{
 }
 
 footer{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 10px;
-  color: #fff;
-  background-color: rgb(80, 80, 80);
+  height: 100px;
+  background-color: rgb(53, 52, 53);
   p{
-    color: #fff; 
+    color: rgb(221, 221, 221);
+    font-size: 16px;
+    letter-spacing: 2px;
+
   }
+ 
   }
 /*# sourceMappingURL=style.css.map */

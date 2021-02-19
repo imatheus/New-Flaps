@@ -18,84 +18,32 @@
 </head>
 <body>
 
-    <div class="bg-modal"  id="bg-modal">
-        <div class="modal">
-            <span onclick="closeModal()" class="close"><i class="fas fa-times-circle"></i></span>
-
-                <div class="tasks-modal">
-                    <div class="title-modal">
-                        <h2>Olá!</h2>
-                    </div> <br><p></p>
-
-
-                    <form class="form" action="php/orcamento.php" method="post">
-
-                    
-
-                    <div class="name-email">
-                        <fieldset>
-                            <input name="nome" placeholder="Nome Completo" type="text" size="45" >
-                        </fieldset> 
-                        <fieldset>
-                            <input name="email" placeholder="Seu E-mail" type="email" size="45" >
-                        </fieldset> 
-
-                    </div> <br>
-
-                    <div class="services">
-                        
-                        <h3>Qual serviço você procura?</h3>
-                        <fieldset>
-                            <select id="select-contato" name="services">
-                                <option value="web">💻 Desenvolvimento Web</option>
-                                <option value="social-midia">🚀 Mídias Sociais</option>
-                                <option value="Ads">📊 Tráfego</option>
-                                <option value="emkt"> 📩 Email Marketing</option>
-                                
-                            </select>
-                          
-                    </fieldset>
-
-                    </div> <br>
-
-                    <div class="design">
-                        <h3>Você já possui um site?</h3>
-                        <fieldset name="site">
-                            
-                                <input name="tem" type="checkbox"><h4>Já possuo</h4></input>
-                        
-                                <input name="naotem" type="checkbox"><h4>Não possuo</h4></input>
-                      
-                            
-                        </fieldset>
-
-                    </div> <br>
-
-                    
-                    <div class="prazo">
-                        <h3>Seu prazo é de:</h3>
-                        <fieldset>
-                            <select id="select-contato" name="prazo">
-                                <option> 1-4 Semanas</option>
-                                <option>2-6 Meses</option>
-                                <option>6 Meses</option>
-                                <option > 1 Ano</option>
-                            </select>
-                        </fieldset>
-
-                    </div>
-                    <div class="btn">
-                      <button onmouseover="passarMouse()"class="button"  type="submit" name="button">Enviar</button>
-                    </div>
-                </form>
-                </div>
+    <header>
+      
         
-        </div>
-    </div>
-   
-
-    <header class="headerDow">
+        <input id="menu-hamburger" type="checkbox"></input>
+        <label for="menu-hamburger">
+        <side class="sidebar">
+          
+            <span class="hamburguer"> </span>
         
+        </side>
+
+        <ul class="menu-ul">
+            <a href="https://newflaps.com.br"><li>Home</li></a>
+            <a href="https://newflaps.com.br/pages/sobre"><li>Sobre</li></a>
+            <a href="https://newflaps.com.br/pages/contato"><li>Contato</li></a>
+
+            <div class="sm">
+                <a href="https://facebook.com/newflaps" target="_blacnk"><i class="fab fa-facebook"></i></a>
+                <a  href="https://instagram.com/newflaps" target="_blacnk"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/softcy"  target="_blacnk"><i class="fab fa-linkedin" target="_blacnk"></i></a>
+            </div>
+
+        </ul>
+    
+    
+    </label>
 
         <div class="headerUp">
         <a href="#"> <img src="imagens/logo - branca.png" alt=""></a>
@@ -105,16 +53,6 @@
 
         <div class="full-banner">
 
-            <div class="container">
-
-                <div class="hamburguer">
-                    <div class="line" id="line1"></div>
-                    <div class="line" id="line2"></div>
-                    <div class="line" id="line3"></div>
-                </div>
-        
-               
-            </div>
             <img src="imagens/19199731 [Convertido]-01.svg" alt="">
         <div class="banner-info">
             <h1>Abra novas abas <br> para o seu <br> negócio hoje</h1><br>
@@ -130,23 +68,6 @@
     </div>   
 
     </header>
- <side class="sidebar">
-            <nav>
-                <ul class="menu">
-                    <a href="#"> <li>Home</li></a>
-                     <a href="#"> <li>Soluções</li></a>
-                    <a href="#"> <li>Sobre</li></a>
-                    <a href="#"> <li>Contato</li></a>
-                 </ul>
-            </nav>
-            <div class="social-media">
-                <a href=""><i class="fab fa-facebook"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-linkedin"></i></a>
-            </div>
-    
-        </side>
-
 
      
   <section class="container-servicos">
@@ -259,7 +180,14 @@
 
 
 <footer>
-   <p>© Copyright 2020 - 2021   |   Todos os direitos reservados</p>
+    <div>
+        <img src="/imagens/12.png" height="45">
+    </div>
+   <div>
+    <p>© Copyright   2020-2021  Agência New Flap's</p>
+
+</div>
+
 </footer>
 </body>
 </html>
